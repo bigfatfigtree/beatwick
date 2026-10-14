@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beatwick — Every city has a sound.</title>
+    <link>https://beatwick.com/</link>
+    <description>Scene reports from 30 music cities: the scenes, the rooms, the tracks actually moving.</description>
+    <language>en</language>
+    <atom:link href="https://beatwick.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>London Is Still the World's A&amp;R Desk</title>
+      <link>https://beatwick.com/articles/london-grime-desk.html</link>
+      <guid>https://beatwick.com/articles/london-grime-desk.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Grime grew up, drill went global, and every label on earth still shops for sounds in London first.</description>
+    </item>
+    <item>
+      <title>Afrobeats Ate the World. Lagos Barely Noticed.</title>
+      <link>https://beatwick.com/articles/lagos-afrobeats.html</link>
+      <guid>https://beatwick.com/articles/lagos-afrobeats.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The world thinks it discovered Afrobeats. Lagos has been running this playbook for twenty years.</description>
+    </item>
+    <item>
+      <title>City Pop Never Died. It Just Moved to Your Algorithm.</title>
+      <link>https://beatwick.com/articles/tokyo-city-pop.html</link>
+      <guid>https://beatwick.com/articles/tokyo-city-pop.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>A 1984 B-side conquered YouTube. Now Tokyo's new wave rides the same current.</description>
+    </item>
+    <item>
+      <title>Nobody Does Live Like Mexico City</title>
+      <link>https://beatwick.com/articles/mexico-city-live.html</link>
+      <guid>https://beatwick.com/articles/mexico-city-live.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The biggest, loudest crowds on earth sing louder than the PA.</description>
+    </item>
+    <item>
+      <title>Techno Is Berlin's Civic Religion</title>
+      <link>https://beatwick.com/articles/berlin-techno.html</link>
+      <guid>https://beatwick.com/articles/berlin-techno.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The city treats its clubs like churches. The door policy is the liturgy.</description>
+    </item>
+    <item>
+      <title>Baile Funk Is the Loudest Party on Earth</title>
+      <link>https://beatwick.com/articles/sao-paulo-funk.html</link>
+      <guid>https://beatwick.com/articles/sao-paulo-funk.html</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>150 BPM, favela-born, now Brazil's dominant pop export.</description>
+    </item>
+  </channel>
+</rss>

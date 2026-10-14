@@ -1,0 +1,36 @@
+# Beatwick
+
+> Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with auto-updating playlists and writing with teeth.
+
+- URL: https://beatwick.com/
+- Feed: https://beatwick.com/feed.xml
+- Sitemap: https://beatwick.com/sitemap.xml
+
+## What this is
+
+An international music-discovery platform organized by city. Each of the 30 cities gets a page with a scene thesis, an auto-updating Spotify playlist (embedded via `<!-- SPOTIFY-PLAYLIST: beatwick-<slug> -->` markers), a trending-tracks list, real venues, and scene-report dispatches. The editorial stance: sharp, funny, factual — punchy ledes, specific details, a clear take, never dry recaps.
+
+## Structure
+
+- `/` — homepage: hero, "Loud This Week" leaderboard, 30-city grid, latest dispatches, newsletter band
+- `/cities/` — full 30-city directory grouped by region
+- `/cities/<slug>.html` — per-city pages (playlist embed marker, trending tracks, venues, dispatches)
+- `/articles/` — flagship scene reports (600-900 words)
+- `/about.html` — brand manifesto
+
+## Regions
+
+North America: New York, Los Angeles, Toronto, Montreal, Nashville, Atlanta, New Orleans
+Latin America & Caribbean: São Paulo, Mexico City, Bogotá, Buenos Aires, Kingston
+Europe: London, Berlin, Paris, Amsterdam, Barcelona, Lisbon, Stockholm, Glasgow
+Africa & Middle East: Lagos, Johannesburg, Accra, Cairo
+Asia-Pacific: Tokyo, Seoul, Mumbai, Jakarta, Manila, Melbourne
+
+## Dispatches (scene reports)
+
+- London Is Still the World's A&R Desk — /articles/london-grime-desk.html
+- Afrobeats Ate the World. Lagos Barely Noticed. — /articles/lagos-afrobeats.html
+- City Pop Never Died. It Just Moved to Your Algorithm. — /articles/tokyo-city-pop.html
+- Nobody Does Live Like Mexico City — /articles/mexico-city-live.html
+- Techno Is Berlin's Civic Religion — /articles/berlin-techno.html
+- Baile Funk Is the Loudest Party on Earth — /articles/sao-paulo-funk.html
