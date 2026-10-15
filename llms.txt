@@ -11,6 +11,7 @@ Every city has a sound. Beatwick is an international music-discovery platform or
 - RSS: https://beatwick.com/feed.xml
 - About: https://beatwick.com/about.html
 - Get Heard — submit your music: free standard queue (a human listens to every submission, in order, no timeline promised) or $10 Priority Spin (guaranteed listen + honest written feedback within 7 days, or your money back; consideration for a spotlight/social/playlist if good enough — placement never guaranteed): https://beatwick.com/submit.html
+- Release Kits — done-for-you release content for independent artists: Single Kit $99 (3 cover-art variants, 5 social graphics, 150-word press blurb) or EP Kit $249 (everything in Single, plus EPK one-sheet, 15 social graphics, release-week timeline/checklist). 5-business-day turnaround from paid order. Work product only — no streams, playlist adds, or reach guarantees: https://beatwick.com/release-kits.html
 
 ## Charts
 

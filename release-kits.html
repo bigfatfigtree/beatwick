@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Release Kits — Done-For-You Release Content for Independent Artists | Beatwick</title>
+<meta name="description" content="Beatwick Release Kits: done-for-you release content for independent artists. Single Kit $99 (3 cover-art variants, 5 social graphics, 150-word press blurb). EP Kit $249 (everything in Single, plus EPK one-sheet, 15 social graphics, release-week timeline). 5-business-day turnaround. You pay for deliverables — never for reach or playlist placement.">
+<link rel="canonical" href="https://beatwick.com/release-kits.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beatwick">
+<meta property="og:title" content="Release Kits — Done-For-You Release Content | Beatwick">
+<meta property="og:description" content="Single Kit $99 · EP Kit $249. Cover art, social graphics, press blurbs, EPK one-sheets, release-week timelines — done for you in 5 business days. Work product, not promises.">
+<meta property="og:url" content="https://beatwick.com/release-kits.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Release Kits — Done-For-You Release Content | Beatwick">
+<meta name="twitter:description" content="Single Kit $99 · EP Kit $249. Cover art, social graphics, press blurbs, EPKs, release timelines — delivered in 5 business days.">
+<link rel="alternate" type="application/rss+xml" title="Beatwick" href="https://beatwick.com/feed.xml">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/v2.css">
+<style>
+  .kit-hero{background:var(--panel);border-bottom:1px solid var(--line)}
+  .kit-hero .wrap{max-width:900px;margin:0 auto;padding:clamp(48px,6vw,84px) 24px}
+  .kit-kicker{font-size:12px;font-weight:800;letter-spacing:.28em;color:var(--green);text-transform:uppercase;margin-bottom:16px}
+  .kit-hero h1{font-family:var(--font-d);font-size:clamp(44px,7vw,88px);line-height:.95;text-transform:uppercase;margin-bottom:20px}
+  .kit-lede{font-size:clamp(17px,2.2vw,21px);color:var(--text);max-width:720px}
+  .kit-lede strong{color:var(--green)}
+  .kit-honest{margin-top:22px;padding:16px 20px;border:1px solid rgba(0,230,150,.35);border-radius:var(--radius);background:rgba(0,230,150,.06);font-size:15.5px;color:var(--text)}
+  .kit-honest strong{color:var(--green)}
+  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;max-width:1000px;margin:40px auto 0;padding:0 24px}
+  .tier{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg);position:relative;display:flex;flex-direction:column}
+  .tier--ep{border-color:rgba(0,230,150,.5);box-shadow:0 0 40px rgba(0,230,150,.08)}
+  .tier__badge{position:absolute;top:-13px;left:24px;background:var(--grad);color:#04110b;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  .tier__name{font-family:var(--font-d);font-size:30px;text-transform:uppercase;margin-bottom:4px}
+  .tier__price{font-size:15px;font-weight:700;color:var(--muted);margin-bottom:14px}
+  .tier__price span{font-size:34px;font-weight:800;color:var(--text)}
+  .tier ul{list-style:none;margin:0 0 22px;flex:1}
+  .tier ul li{padding:8px 0 8px 26px;position:relative;font-size:15px;color:var(--muted)}
+  .tier ul li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+  .tier ul li.neg::before{content:"✕";color:var(--live)}
+  .kit-section{max-width:900px;margin:0 auto;padding:clamp(40px,5vw,64px) 24px}
+  .kit-section h2{font-family:var(--font-d);font-size:clamp(30px,4vw,46px);text-transform:uppercase;margin-bottom:12px}
+  .kit-section h2 .acid{color:var(--acid)}
+  .form-wrap{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,40px);margin-top:24px}
+  .tier-pick{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+  .tier-pick label{cursor:pointer}
+  .tier-pick input{position:absolute;opacity:0;pointer-events:none}
+  .tier-opt{border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:block;transition:border-color .15s,background .15s;height:100%}
+  .tier-pick input:checked + .tier-opt{border-color:var(--green);background:rgba(0,230,150,.06)}
+  .tier-pick input:focus-visible + .tier-opt{outline:2px solid var(--green);outline-offset:2px}
+  .tier-opt__name{font-weight:800;font-size:16px;margin-bottom:4px}
+  .tier-opt__name .price-tag{color:var(--green)}
+  .tier-opt__desc{font-size:13.5px;color:var(--muted)}
+  .field{margin-bottom:20px}
+  .field label{display:block;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .field label .req{color:var(--green)}
+  .field input,.field select,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;color:var(--text);font-family:var(--font-b);font-size:15.5px;padding:13px 16px}
+  .field textarea{min-height:110px;resize:vertical}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--green)}
+  .field--invalid input,.field--invalid textarea{border-color:var(--live)}
+  .field__error{display:none;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--live)}
+  .field--invalid .field__error{display:block}
+  .field__hint{margin-top:6px;font-size:13px;color:var(--dim)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.form-row,.tier-pick{grid-template-columns:1fr}}
+  .kit-btn{background:var(--grad);color:#04110b;border:none;border-radius:999px;padding:16px 40px;font-weight:800;font-size:14px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;width:100%;margin-top:8px}
+  .kit-btn:hover{transform:translateY(-1px)}
+  .kit-btn:disabled{opacity:.6;cursor:wait;transform:none}
+  .form-status{margin-top:18px;font-size:15px;font-weight:600}
+  .form-status[data-tone="ok"]{color:var(--green)}
+  .form-status[data-tone="error"]{color:var(--live)}
+  .form-status[data-tone="info"]{color:var(--muted)}
+  .paid-banner{display:none;border:1px solid rgba(0,230,150,.5);background:rgba(0,230,150,.08);border-radius:var(--radius);padding:22px;margin-bottom:24px}
+  .paid-banner.show{display:block}
+  .paid-banner h3{font-family:var(--font-d);font-size:24px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+  .paid-banner p{font-size:15px;color:var(--text)}
+  .faq{margin-top:8px}
+  .faq details{border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;background:var(--panel)}
+  .faq summary{cursor:pointer;padding:18px 22px;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--green);font-size:22px;font-weight:400;flex-shrink:0}
+  .faq details[open] summary::after{content:"–"}
+  .faq .faq-a{padding:0 22px 20px;color:var(--muted);font-size:15.5px}
+  .faq .faq-a strong{color:var(--text)}
+  .deliverable-note{font-size:13px;color:var(--dim);margin-top:6px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","name":"Release Kits — Done-For-You Release Content for Independent Artists | Beatwick","url":"https://beatwick.com/release-kits.html","description":"Done-for-you release content packs for independent artists. Single Kit $99, EP Kit $249. 5-business-day turnaround. Work product, not promises.","publisher":{"@type":"Organization","name":"Beatwick","url":"https://beatwick.com/"}},
+{"@type":"Service","name":"Beatwick Release Kits","url":"https://beatwick.com/release-kits.html","provider":{"@type":"Organization","name":"Beatwick","url":"https://beatwick.com/"},"description":"Done-for-you release content packs for independent artists: cover art, social graphics, press blurbs, EPK one-sheets, and release-week timelines. Delivered in 5 business days.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Release Kit tiers","itemListElement":[
+{"@type":"Offer","name":"Single Kit","price":"99","priceCurrency":"USD","description":"3 cover-art variants, 5 social graphics (1080×1080), 150-word press blurb. Delivered in 5 business days.","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"EP Kit","price":"249","priceCurrency":"USD","description":"Everything in the Single Kit, plus EPK one-sheet (PDF-ready page), 15 social graphics, and a release-week timeline/checklist. Delivered in 5 business days.","availability":"https://schema.org/InStock"}
+]}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What exactly do I get with a Single Kit?","acceptedAnswer":{"@type":"Answer","text":"Three cover-art variants for your single, five 1080×1080 social graphics sized for Instagram and Facebook, and a 150-word press blurb you can send to blogs, playlists, and press. Delivered within 5 business days of your paid order."}},
+{"@type":"Question","name":"What exactly do I get with an EP Kit?","acceptedAnswer":{"@type":"Answer","text":"Everything in the Single Kit, plus a PDF-ready EPK one-sheet (bio, key tracks, press quotes, contact), fifteen 1080×1080 social graphics, and a release-week timeline and checklist. Delivered within 5 business days of your paid order."}},
+{"@type":"Question","name":"How does payment work?","acceptedAnswer":{"@type":"Answer","text":"Place your order on this page — nothing is charged here. We send you a secure invoice within 24 hours; your 5-business-day turnaround starts when the invoice is paid. If our instant checkout is live, you'll be redirected to pay securely instead."}},
+{"@type":"Question","name":"Do Release Kits guarantee streams, playlist adds, or press coverage?","acceptedAnswer":{"@type":"Answer","text":"No. Release Kits are work product: artwork, graphics, and copy, delivered to you. They do not include playlist placement, press outreach, streams, or any audience or reach guarantees. What you pay for is the deliverables listed on this page, nothing else."}},
+{"@type":"Question","name":"What if I don't like the artwork?","acceptedAnswer":{"@type":"Answer","text":"Every kit includes one full revision round: tell us what's off and we'll rework it. If after the revision round it's still not right, you get a full refund — no forms, no fight."}}
+]}
+]}
+</script>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><span>30 CITIES · ONE FREQUENCY</span><span class="js-date">EVERY CITY HAS A SOUND</span></div></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Beatwick home"><img src="assets/logo.png" alt="Beatwick"></a>
+    <nav class="main-nav">
+      <a href="cities/index.html">Cities</a>
+      <a href="charts/index.html">Charts</a>
+      <a href="map.html">Map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="kit-hero">
+    <div class="wrap">
+      <p class="kit-kicker">Release Kits</p>
+      <h1>Your release, <span class="acid">packaged.</span></h1>
+      <p class="kit-lede">Releasing music is half music, half <strong>materials</strong> — the cover art, the social posts, the one-sheet nobody reads until they need it. We make all of it for you, in <strong>5 business days</strong>, so your release looks like it has a team behind it.</p>
+      <div class="kit-honest"><strong>Work product, not promises.</strong> What you pay for is listed below — artwork, graphics, copy, delivered to your inbox. No streams, no playlist adds, no press guarantees, no audience numbers we don't have. If anyone sells you those, run.</div>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <p class="tier__name">Single Kit</p>
+        <p class="tier__price"><span>$99</span> — one single</p>
+        <ul>
+          <li><strong>3 cover-art variants</strong> for your single</li>
+          <li><strong>5 social graphics</strong> (1080×1080, IG/FB-ready)</li>
+          <li><strong>150-word press blurb</strong> — send it to blogs and playlists</li>
+          <li>Delivered in <strong>5 business days</strong></li>
+          <li>One full revision round — or your money back</li>
+        </ul>
+        <a class="btn btn-grad" href="#order-form" data-tier-pick="single">Order the Single Kit — $99</a>
+      </div>
+      <div class="tier tier--ep">
+        <span class="tier__badge">Most complete</span>
+        <p class="tier__name">EP Kit</p>
+        <p class="tier__price"><span>$249</span> — full EP campaign</p>
+        <ul>
+          <li><strong>Everything in the Single Kit</strong></li>
+          <li><strong>EPK one-sheet</strong> — PDF-ready page: bio, key tracks, contact</li>
+          <li><strong>15 social graphics</strong> (1080×1080, IG/FB-ready)</li>
+          <li><strong>Release-week timeline + checklist</strong> — what to post, when</li>
+          <li>Delivered in <strong>5 business days</strong></li>
+          <li>One full revision round — or your money back</li>
+        </ul>
+        <a class="btn btn-grad" href="#order-form" data-tier-pick="ep">Order the EP Kit — $249</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="kit-section" id="order-form">
+    <h2>Order <span class="acid">your kit</span></h2>
+    <p style="color:var(--muted);max-width:680px">Tell us about the release. <strong>Nothing is charged on this form</strong> — we send you a secure invoice within 24 hours, and your 5-business-day turnaround starts when it's paid.</p>
+
+    <div class="form-wrap">
+      <div class="paid-banner" id="paid-banner" role="status">
+        <h3>Payment received — your kit is in production</h3>
+        <p>Thanks — your order is confirmed and paid. Your 5-business-day turnaround starts now; keep your payment receipt and we'll deliver everything to your inbox.</p>
+      </div>
+
+      <form id="release-kit-form" novalidate>
+        <div class="tier-pick" role="radiogroup" aria-label="Kit tier">
+          <label>
+            <input type="radio" name="tier" value="single" checked>
+            <span class="tier-opt">
+              <span class="tier-opt__name">Single Kit <span class="price-tag">— $99</span></span>
+              <span class="tier-opt__desc">3 cover-art variants, 5 social graphics, 150-word press blurb.</span>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="tier" value="ep">
+            <span class="tier-opt">
+              <span class="tier-opt__name">EP Kit <span class="price-tag">— $249</span></span>
+              <span class="tier-opt__desc">Everything in Single, plus EPK one-sheet, 15 social graphics, release-week timeline.</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-artist">Artist name <span class="req">*</span></label>
+            <input id="f-artist" name="artist" type="text" maxlength="120" autocomplete="off" placeholder="Your artist or project name">
+            <p class="field__error" data-error-for="f-artist"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" placeholder="you@example.com">
+            <p class="field__error" data-error-for="f-email"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-ig">Instagram handle</label>
+            <input id="f-ig" name="ig_handle" type="text" maxlength="40" autocomplete="off" placeholder="@yourhandle (optional)">
+            <p class="field__error" data-error-for="f-ig"></p>
+          </div>
+          <div class="field">
+            <label for="f-date">Release date</label>
+            <input id="f-date" name="release_date" type="date">
+            <p class="field__hint">So we can time delivery to your drop. Optional.</p>
+            <p class="field__error" data-error-for="f-date"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-notes">About the release</label>
+          <textarea id="f-notes" name="notes" maxlength="1500" placeholder="What does it sound like? Any visual direction — colors, mood, references? Links to the music help a lot."></textarea>
+          <p class="field__hint"><span id="notes-count">0</span> / 1500</p>
+          <p class="field__error" data-error-for="f-notes"></p>
+        </div>
+
+        <button class="kit-btn" type="submit" id="order-btn">Place my order — invoice follows</button>
+        <p class="deliverable-note">No charge today. We email your secure invoice within 24 hours; the 5-business-day clock starts when it's paid.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="kit-section">
+    <h2>Straight <span class="acid">answers</span></h2>
+    <div class="faq">
+      <details open>
+        <summary>What exactly am I paying for?</summary>
+        <div class="faq-a"><strong>The deliverables listed above — nothing else.</strong> Single Kit: 3 cover-art variants, 5 social graphics, a 150-word press blurb. EP Kit adds a PDF-ready EPK one-sheet, 15 social graphics total, and a release-week timeline with checklist. Delivered to your inbox within 5 business days of payment.</div>
+      </details>
+      <details>
+        <summary>How does payment work?</summary>
+        <div class="faq-a">Place your order here — <strong>nothing is charged on this form</strong>. We send a secure invoice to your email within 24 hours. Pay it and your 5-business-day turnaround starts. If our instant checkout is live, you'll go straight to secure payment instead.</div>
+      </details>
+      <details>
+        <summary>Does this get me on playlists or press?</summary>
+        <div class="faq-a"><strong>No.</strong> Release Kits are work product: artwork, graphics, copy. They don't include playlist placement, press outreach, streams, or any audience or reach guarantees. If anyone sells you those alongside design work, be skeptical — including us.</div>
+      </details>
+      <details>
+        <summary>Who makes the artwork?</summary>
+        <div class="faq-a">Our studio — every kit is directed by a human and built with professional design tools, then reviewed before delivery. You get one full revision round: tell us what's off and we rework it. Still not right after that? Full refund, no fight.</div>
+      </details>
+      <details>
+        <summary>What if my release date is sooner than 5 business days?</summary>
+        <div class="faq-a">Tell us in the order notes. If we can't hit your date, we'll say so before you pay — we'd rather turn down the order than miss your drop.</div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Beatwick">
+      <p>Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with playlists that refresh and writing with teeth.</p>
+      <p style="margin-top:12px"><a href="https://www.instagram.com/thebeatwick">Instagram</a> · <a href="https://www.facebook.com/thebeatwick">Facebook</a></p>
+
+      <form class="in-rotation__form footer-signup" novalidate>
+        <p class="footer-signup__title">In rotation — the weekly email</p>
+        <div class="in-rotation__row">
+          <input class="in-rotation__input" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
+          <button class="in-rotation__button" type="submit">Join</button>
+        </div>
+        <p class="in-rotation__status" data-signup-status role="status" aria-live="polite" hidden></p>
+      </form>
+      <script src="/assets/signup.js"></script>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="cities/index.html">All 30 cities</a>
+      <a href="charts/index.html">The Founder's Global 30</a>
+      <a href="map.html">World map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="archive.html">Dispatches</a>
+      <a href="about.html">About</a>
+      <a href="submit.html">Get Heard — submit your music</a>
+      <a href="release-kits.html">Release Kits — done-for-you release content</a>
+      <a href="feed.xml">RSS feed</a>
+    </div>
+    <div class="footer-col">
+      <h4>All 30 cities</h4>
+        <p class="footer-region">North America</p>
+        <div class="footer-cities">
+          <a href="cities/new-york.html">New York</a><a href="cities/los-angeles.html">Los Angeles</a><a href="cities/toronto.html">Toronto</a><a href="cities/mexico-city.html">Mexico City</a><a href="cities/nashville.html">Nashville</a><a href="cities/atlanta.html">Atlanta</a><a href="cities/new-orleans.html">New Orleans</a>
+        </div>
+        <p class="footer-region">Latin America & Caribbean</p>
+        <div class="footer-cities">
+          <a href="cities/sao-paulo.html">São Paulo</a><a href="cities/mexico-city.html">Mexico City</a><a href="cities/bogota.html">Bogotá</a><a href="cities/buenos-aires.html">Buenos Aires</a><a href="cities/kingston.html">Kingston</a>
+        </div>
+        <p class="footer-region">Europe</p>
+        <div class="footer-cities">
+          <a href="cities/london.html">London</a><a href="cities/berlin.html">Berlin</a><a href="cities/paris.html">Paris</a><a href="cities/amsterdam.html">Amsterdam</a><a href="cities/barcelona.html">Barcelona</a><a href="cities/lisbon.html">Lisbon</a><a href="cities/stockholm.html">Stockholm</a><a href="cities/glasgow.html">Glasgow</a>
+        </div>
+        <p class="footer-region">Africa & Middle East</p>
+        <div class="footer-cities">
+          <a href="cities/lagos.html">Lagos</a><a href="cities/johannesburg.html">Johannesburg</a><a href="cities/accra.html">Accra</a><a href="cities/cairo.html">Cairo</a>
+        </div>
+        <p class="footer-region">Asia-Pacific</p>
+        <div class="footer-cities">
+          <a href="cities/tokyo.html">Tokyo</a><a href="cities/seoul.html">Seoul</a><a href="cities/mumbai.html">Mumbai</a><a href="cities/jakarta.html">Jakarta</a><a href="cities/manila.html">Manila</a><a href="cities/melbourne.html">Melbourne</a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-disclaimer">Beatwick is an independent music-discovery publication. Artist names, song titles and venue names belong to their respective owners. <a href="assets/credits.md">Photo credits</a>.</div>
+  <div class="footer-bottom"><span>© 2026 Beatwick. Every city has a sound.</span><span>30 cities · one frequency</span></div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   STRIPE SETUP — do this once Stripe is connected:
+   1. Stripe dashboard → Products → create two one-time products:
+        "Beatwick Single Kit" — $99 USD
+        "Beatwick EP Kit"     — $249 USD
+   2. Create a Payment Link for each. In each link's settings, set the
+      success behavior to redirect to:
+        https://beatwick.netlify.app/release-kits.html?paid=1&tier=single
+        https://beatwick.netlify.app/release-kits.html?paid=1&tier=ep
+   3. Paste the two real buy.stripe.com URLs below, replacing the
+      REPLACE_WITH_REAL_LINK placeholders.
+   Until then, orders are stored with status "invoice-pending" and
+   nobody is charged — the form handles the placeholder honestly
+   (see submit handler below): artists get "invoice within 24 hours".
+------------------------------------------------------------------ */
+const STRIPE_SINGLE_LINK = "https://buy.stripe.com/REPLACE_WITH_SINGLE_LINK";
+const STRIPE_EP_LINK = "https://buy.stripe.com/REPLACE_WITH_EP_LINK";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const IG_RE = /^@?[A-Za-z0-9._]{1,30}$/;
+
+const form = document.getElementById("release-kit-form");
+const statusEl = document.getElementById("form-status");
+const orderBtn = document.getElementById("order-btn");
+
+function setFieldError(id, message) {
+  const field = document.getElementById(id).closest(".field");
+  field.classList.add("field--invalid");
+  field.querySelector('[data-error-for="' + id + '"]').textContent = message;
+}
+function clearFieldError(id) {
+  const field = document.getElementById(id).closest(".field");
+  field.classList.remove("field--invalid");
+  field.querySelector('[data-error-for="' + id + '"]').textContent = "";
+}
+function setStatus(message, tone) {
+  statusEl.textContent = message;
+  statusEl.dataset.tone = tone;
+}
+
+function validate() {
+  let ok = true;
+  const v = (id) => document.getElementById(id).value.trim();
+
+  if (!v("f-artist")) { setFieldError("f-artist", "Tell us your artist name — we need to know who this kit is for."); ok = false; }
+  else clearFieldError("f-artist");
+
+  const email = v("f-email");
+  if (!email || !EMAIL_RE.test(email)) { setFieldError("f-email", "That email doesn't look right — double-check it, since your invoice and deliverables go there."); ok = false; }
+  else clearFieldError("f-email");
+
+  const ig = v("f-ig");
+  if (ig && !IG_RE.test(ig)) { setFieldError("f-ig", "That doesn't look like an Instagram handle — letters, numbers, dots and underscores only."); ok = false; }
+  else clearFieldError("f-ig");
+
+  const date = v("f-date");
+  if (date && !/^\d{4}-\d{2}-\d{2}$/.test(date)) { setFieldError("f-date", "Pick a valid date from the calendar."); ok = false; }
+  else clearFieldError("f-date");
+
+  const notes = v("f-notes");
+  if (notes.length > 1500) { setFieldError("f-notes", "Keep it under 1500 characters."); ok = false; }
+  else clearFieldError("f-notes");
+
+  return ok;
+}
+
+["f-artist","f-email","f-ig","f-date","f-notes"].forEach((id) => {
+  const el = document.getElementById(id);
+  el.addEventListener("input", () => clearFieldError(id));
+  el.addEventListener("change", () => clearFieldError(id));
+});
+document.getElementById("f-notes").addEventListener("input", (e) => {
+  document.getElementById("notes-count").textContent = e.target.value.length;
+});
+
+// Tier shortcut buttons scroll to the form and pre-select the tier.
+document.querySelectorAll("[data-tier-pick]").forEach((a) => {
+  a.addEventListener("click", () => {
+    const radio = form.querySelector('input[name="tier"][value="' + a.dataset.tierPick + '"]');
+    if (radio) radio.checked = true;
+  });
+});
+
+// ?paid=1 — the artist is back from Stripe checkout.
+if (new URLSearchParams(location.search).get("paid") === "1") {
+  document.getElementById("paid-banner").classList.add("show");
+}
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!validate()) {
+    setStatus("A couple of fields need attention — they're marked in red above.", "error");
+    return;
+  }
+
+  const fd = new FormData(form);
+  const tier = fd.get("tier");
+  const payload = {
+    artist: fd.get("artist").trim(),
+    email: fd.get("email").trim(),
+    ig_handle: fd.get("ig_handle").trim(),
+    release_date: fd.get("release_date"),
+    tier: tier,
+    notes: fd.get("notes").trim(),
+  };
+
+  orderBtn.disabled = true;
+  setStatus("Placing your order…", "info");
+
+  try {
+    const res = await fetch("/.netlify/functions/release-kit-order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+
+    if (!data.ok) {
+      const messages = {
+        "invalid-artist": "Artist name is missing or too long.",
+        "invalid-email": "That email doesn't look right.",
+        "invalid-ig-handle": "That Instagram handle doesn't look right.",
+        "invalid-release-date": "That release date doesn't look valid.",
+        "invalid-tier": "Pick a kit — Single or EP.",
+        "invalid-notes": "Keep your notes under 1500 characters.",
+        "rate-limited": "Slow down — too many orders from this connection today.",
+      };
+      setStatus(messages[data.error] || "Something went wrong on our end. Try again in a minute.", "error");
+      orderBtn.disabled = false;
+      return;
+    }
+
+    // If instant checkout is wired, send the artist straight to Stripe.
+    const link = tier === "single" ? STRIPE_SINGLE_LINK : STRIPE_EP_LINK;
+    if (!link.includes("REPLACE_WITH")) {
+      window.location.href = link
+        + "?client_reference_id=" + encodeURIComponent(data.id)
+        + "&prefilled_email=" + encodeURIComponent(payload.email);
+      return;
+    }
+
+    // Honest fallback: order stored, invoice follows within 24 hours.
+    form.reset();
+    setStatus("Order received. Nothing has been charged — we'll email your secure invoice within 24 hours, and your 5-business-day turnaround starts when it's paid.", "ok");
+    orderBtn.disabled = false;
+  } catch (err) {
+    setStatus("Couldn't reach our server — check your connection and try again.", "error");
+    orderBtn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
