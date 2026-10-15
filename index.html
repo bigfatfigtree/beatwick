@@ -312,11 +312,12 @@
   var map = L.map('map', {scrollWheelZoom:false}).setView([28, 8], 2);
   map.on('focus', function(){ map.scrollWheelZoom.enable(); });
   map.on('blur', function(){ map.scrollWheelZoom.disable(); });
-  var tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    maxZoom:18, minZoom:2, detectRetina:true
+  /* Esri's dark-gray canvas tiles: natively dark, no API key, free with attribution */
+  var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution:'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, DeLorme, NAVTEQ',
+    maxZoom:16, minZoom:2
   }).addTo(map);
-  /* graceful fallback if CartoDB tiles fail: show after several consecutive
+  /* graceful fallback if OSM tiles fail: show after several consecutive
      errors so a single bad tile doesn't kill the map */
   var errCount = 0, fallbackShown = false;
   tiles.on('tileerror', function(){
