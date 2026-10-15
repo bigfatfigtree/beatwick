@@ -1,0 +1,35 @@
+/* Beatwick V2 — shared city marker data for Leaflet maps.
+   Used by index.html (name + link popups) and map.html (name + thesis + link popups).
+   Theses paraphrased from each city's page; coordinates are city centres. */
+const BEATWICK_CITIES = [
+  {slug:"new-york", name:"New York", lat:40.7128, lng:-74.0060, thesis:"Hip-hop's birthplace, still the densest music city on earth — drill, indie lineage, jazz rooms that never closed."},
+  {slug:"los-angeles", name:"Los Angeles", lat:34.0522, lng:-118.2437, thesis:"The industry's company town: G-funk's legacy, Westside hit factories, and the Latin crossover wave."},
+  {slug:"toronto", name:"Toronto", lat:43.6532, lng:-79.3832, thesis:"The 6ix sound went global — late-night R&B murk, gospel-tinted soul, and the Caribbean carnival."},
+  {slug:"montreal", name:"Montréal", lat:45.5017, lng:-73.5673, thesis:"Indie rock's northern capital and a dance-music rewiring, en français."},
+  {slug:"nashville", name:"Nashville", lat:36.1627, lng:-86.7816, thesis:"A songwriting economy like no other — Music Row by day, honky-tonks that never close."},
+  {slug:"atlanta", name:"Atlanta", lat:33.7490, lng:-84.3880, thesis:"Trap's birthplace and still its factory — the city that manufactures the culture."},
+  {slug:"new-orleans", name:"New Orleans", lat:29.9511, lng:-90.0715, thesis:"Jazz was born here, bounce was born here — the funeral has a brass band."},
+  {slug:"sao-paulo", name:"São Paulo", lat:-23.5558, lng:-46.6396, thesis:"Baile funk at 150 BPM and climbing — South America's loudest party."},
+  {slug:"mexico-city", name:"Mexico City", lat:19.4326, lng:-99.1332, thesis:"The biggest live crowds on earth, from Foro Sol singalongs to sonidero street parties."},
+  {slug:"bogota", name:"Bogotá", lat:4.7110, lng:-74.0721, thesis:"Latin alternative's high-altitude laboratory — tropical futurism with a mountain chill."},
+  {slug:"buenos-aires", name:"Buenos Aires", lat:-34.6037, lng:-58.3816, thesis:"Trap argentino's freestyle battleground, with rock nacional in its soul."},
+  {slug:"kingston", name:"Kingston", lat:18.0179, lng:-76.8099, thesis:"Reggae's birthplace, sound-system culture's inventor — the world dances to its basslines."},
+  {slug:"london", name:"London", lat:51.5074, lng:-0.1278, thesis:"Grime, drill, UK rap — the world's A&R desk demos it here first."},
+  {slug:"berlin", name:"Berlin", lat:52.5200, lng:13.4050, thesis:"Techno as civic infrastructure, UNESCO-certified."},
+  {slug:"paris", name:"Paris", lat:48.8566, lng:2.3522, thesis:"France is the biggest rap market outside America — Paris is its engine room."},
+  {slug:"amsterdam", name:"Amsterdam", lat:52.3676, lng:4.9041, thesis:"ADE's host and electronic music's unofficial capital."},
+  {slug:"barcelona", name:"Barcelona", lat:41.3874, lng:2.1686, thesis:"Sónar's home; Catalan club culture wired into global Latin rhythms."},
+  {slug:"lisbon", name:"Lisbon", lat:38.7223, lng:-9.1393, thesis:"Kuduro mutated here; Afro-Portuguese rap moves between three languages."},
+  {slug:"stockholm", name:"Stockholm", lat:59.3293, lng:18.0686, thesis:"Pop as industrial science — ABBA to Max Martin, the charts are its lab report."},
+  {slug:"glasgow", name:"Glasgow", lat:55.8642, lng:-4.2518, thesis:"Guitar music's stubborn capital, decade after decade."},
+  {slug:"lagos", name:"Lagos", lat:6.5244, lng:3.3792, thesis:"Afrobeats' ground zero — the world's loudest A&R desk sits in Lagos traffic."},
+  {slug:"johannesburg", name:"Johannesburg", lat:-26.2041, lng:28.0473, thesis:"Amapiano's birthplace — a log-drum bassline the planet dances to."},
+  {slug:"accra", name:"Accra", lat:5.6037, lng:-0.1870, thesis:"Hiplife's house, Black Sherif's wrecking ball — December is the continent's biggest party."},
+  {slug:"cairo", name:"Cairo", lat:30.0444, lng:31.2357, thesis:"Mahraganat: the streets talking back, banned by authorities, exported by the internet."},
+  {slug:"tokyo", name:"Tokyo", lat:35.6762, lng:139.6503, thesis:"City pop resurrected by the algorithm; J-rap's feral present."},
+  {slug:"seoul", name:"Seoul", lat:37.5665, lng:126.9780, thesis:"The idol machine above, Hongdae's underground below — two cities, one subway."},
+  {slug:"mumbai", name:"Mumbai", lat:19.0760, lng:72.8777, thesis:"Bollywood's capital with a gully-rap second act and a ferocious metal scene."},
+  {slug:"jakarta", name:"Jakarta", lat:-6.2088, lng:106.8456, thesis:"Dangdut koplo — 270 million people dancing in a traffic jam."},
+  {slug:"manila", name:"Manila", lat:14.5995, lng:120.9842, thesis:"P-pop's home turf; crowds that sing every word at sound-engineer-worrying volume."},
+  {slug:"melbourne", name:"Melbourne", lat:-37.8136, lng:144.9631, thesis:"More venues per capita than almost anywhere — the gig is the culture."}
+];

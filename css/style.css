@@ -140,13 +140,18 @@ a{color:inherit}
 
 /* track list */
 .tracks{padding:64px 0;border-bottom:1px solid var(--line)}
-.track{display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.track{display:grid;grid-template-columns:56px 1fr auto auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
 .track:last-child{border-bottom:0}
 .track:hover .track-title{color:var(--acid)}
 .track-no{font-family:var(--display);font-size:26px;color:#3a3a40}
 .track-title{font-weight:700;font-size:17px}
 .track-artist{font-size:14px;color:var(--muted)}
 .track-tag{font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--acid);border:1px solid var(--acid);padding:5px 10px;white-space:nowrap}
+.track-move{font-size:13px;font-weight:700;min-width:42px;text-align:right;color:var(--muted)}
+.track-move.up{color:var(--acid)}
+.track-move.down{color:#e0645a}
+.chart-note{font-size:12px;letter-spacing:.06em;color:var(--muted);margin:0 0 18px}
+.chart-note{margin:20px 0 0;font-size:12px;letter-spacing:.06em;color:var(--muted)}
 @media(max-width:560px){.track-tag{display:none}}
 
 /* venues */
@@ -195,3 +200,12 @@ a{color:inherit}
 .btn{display:inline-block;padding:15px 32px;border:1px solid var(--acid);color:var(--acid);font-weight:700;letter-spacing:.12em;font-size:13px;text-decoration:none;text-transform:uppercase;transition:background .18s ease,color .18s ease}
 .btn:hover{background:var(--acid);color:var(--acid-ink)}
 .cta-row{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
+
+/* chart movement indicators (Asia-Pacific upgrade) */
+.track-side{display:flex;align-items:center;gap:10px}
+.track-move{font-size:18px;font-weight:700;line-height:1}
+.mv-up{color:var(--acid)}
+.mv-down{color:#ff6b6b}
+.mv-new{color:var(--acid)}
+.mv-eq{color:var(--muted)}
+.chart-note{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.7}

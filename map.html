@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Map — Beatwick</title>
+<meta name="description" content="The Beatwick world map: all 30 music cities on one dark atlas. Tap a marker for the city's sound and tune in.">
+<link rel="canonical" href="https://beatwick.com/map.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beatwick">
+<meta property="og:title" content="World Map — Beatwick">
+<meta property="og:description" content="All 30 Beatwick cities on one dark atlas. Tap a marker, hear the city's sound.">
+<meta property="og:url" content="https://beatwick.com/map.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="World Map — Beatwick">
+<meta name="twitter:description" content="All 30 Beatwick cities on one dark atlas.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/v2.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"World Map — Beatwick","url":"https://beatwick.com/map.html","description":"Interactive dark atlas of Beatwick's 30 music cities.","publisher":{"@type":"Organization","name":"Beatwick","url":"https://beatwick.com/"}}
+</script>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><span><span class="live-dot"></span>30 cities · one frequency</span><span>Every city has a sound</span></div></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Beatwick home"><img src="assets/logo.png" alt="Beatwick"></a>
+    <nav class="main-nav">
+      <a href="cities/index.html">Cities</a>
+      <a href="charts/index.html">Charts</a>
+      <a href="map.html" class="active">Map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="map-full">
+  <div class="wrap" style="padding-top:28px;padding-bottom:20px">
+    <span class="section-kicker">The atlas</span>
+    <h1 class="section-title" style="margin-bottom:6px">30 cities, <span class="grad">one map</span></h1>
+    <p style="color:var(--muted);font-size:15px">Tap a marker for the city's sound, then tune in. Tiles: © OpenStreetMap contributors © CARTO.</p>
+  </div>
+  <div id="map" role="application" aria-label="Fullscreen world map of Beatwick's 30 cities"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Beatwick">
+      <p>Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with playlists that refresh and writing with teeth.</p>
+      <p style="margin-top:12px"><a href="https://www.instagram.com/thebeatwick">Instagram</a> · <a href="https://www.facebook.com/thebeatwick">Facebook</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="cities/index.html">All 30 cities</a>
+      <a href="charts/index.html">The Beatwick 30</a>
+      <a href="map.html">World map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="archive.html">Dispatches</a>
+      <a href="about.html">About</a>
+      <a href="feed.xml">RSS feed</a>
+    </div>
+    <div class="footer-col">
+      <h4>All 30 cities</h4>
+      <div class="footer-cities">
+        <a href="cities/new-york.html">New York</a><a href="cities/los-angeles.html">Los Angeles</a><a href="cities/toronto.html">Toronto</a>
+        <a href="cities/montreal.html">Montréal</a><a href="cities/nashville.html">Nashville</a><a href="cities/atlanta.html">Atlanta</a>
+        <a href="cities/new-orleans.html">New Orleans</a><a href="cities/sao-paulo.html">São Paulo</a><a href="cities/mexico-city.html">Mexico City</a>
+        <a href="cities/bogota.html">Bogotá</a><a href="cities/buenos-aires.html">Buenos Aires</a><a href="cities/kingston.html">Kingston</a>
+        <a href="cities/london.html">London</a><a href="cities/berlin.html">Berlin</a><a href="cities/paris.html">Paris</a>
+        <a href="cities/amsterdam.html">Amsterdam</a><a href="cities/barcelona.html">Barcelona</a><a href="cities/lisbon.html">Lisbon</a>
+        <a href="cities/stockholm.html">Stockholm</a><a href="cities/glasgow.html">Glasgow</a><a href="cities/lagos.html">Lagos</a>
+        <a href="cities/johannesburg.html">Johannesburg</a><a href="cities/accra.html">Accra</a><a href="cities/cairo.html">Cairo</a>
+        <a href="cities/tokyo.html">Tokyo</a><a href="cities/seoul.html">Seoul</a><a href="cities/mumbai.html">Mumbai</a>
+        <a href="cities/jakarta.html">Jakarta</a><a href="cities/manila.html">Manila</a><a href="cities/melbourne.html">Melbourne</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-disclaimer">Beatwick is an independent music-discovery publication. Artist names, song titles and venue names belong to their respective owners.</div>
+  <div class="footer-bottom"><span>© 2026 Beatwick. Every city has a sound.</span><span>30 cities · one frequency</span></div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/map-cities.js"></script>
+<script>
+(function(){
+  var map = L.map('map').setView([28, 8], 2);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    maxZoom:18, minZoom:2, worldCopyJump:true
+  }).addTo(map);
+  var icon = L.divIcon({className:'city-marker', html:'<span></span>', iconSize:[18,18], iconAnchor:[9,9], popupAnchor:[0,-10]});
+  BEATWICK_CITIES.forEach(function(c){
+    L.marker([c.lat, c.lng], {icon:icon, title:c.name})
+      .bindPopup('<h4>'+c.name+'</h4><p>'+c.thesis+'</p><a class="pop-link" href="cities/'+c.slug+'.html">Tune in &rarr;</a>')
+      .addTo(map);
+  });
+})();
+</script>
+</body>
+</html>

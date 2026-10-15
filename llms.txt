@@ -1,36 +1,249 @@
 # Beatwick
 
-> Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with auto-updating playlists and writing with teeth.
+Every city has a sound. Beatwick is an international music-discovery platform organized by city — 30 music markets across 5 regions, each with trending tracks, artist spotlights, scene reports, venue guides, and auto-updating Spotify playlists.
 
-- URL: https://beatwick.com/
-- Feed: https://beatwick.com/feed.xml
-- Sitemap: https://beatwick.com/sitemap.xml
+- Homepage: https://beatwick.com/
+- All 30 cities by region: https://beatwick.com/cities/
+- All 150 artist spotlights: https://beatwick.com/artists/
+- The Beatwick 30 (global chart, updated weekly): https://beatwick.com/charts/
+- World map: https://beatwick.com/map.html
+- Archive (Oct 2025–present): https://beatwick.com/archive.html
+- RSS: https://beatwick.com/feed.xml
+- About: https://beatwick.com/about.html
 
-## What this is
+## Charts
 
-An international music-discovery platform organized by city. Each of the 30 cities gets a page with a scene thesis, an auto-updating Spotify playlist (embedded via `<!-- SPOTIFY-PLAYLIST: beatwick-<slug> -->` markers), a trending-tracks list, real venues, and scene-report dispatches. The editorial stance: sharp, funny, factual — punchy ledes, specific details, a clear take, never dry recaps.
+All Beatwick charts are curated by human editors and updated weekly. They reflect what our city editors are hearing on the ground, not streaming data.
 
-## Structure
+## Cities (30)
 
-- `/` — homepage: hero, "Loud This Week" leaderboard, 30-city grid, latest dispatches, newsletter band
-- `/cities/` — full 30-city directory grouped by region
-- `/cities/<slug>.html` — per-city pages (playlist embed marker, trending tracks, venues, dispatches)
-- `/articles/` — flagship scene reports (600-900 words)
-- `/about.html` — brand manifesto
+### North America
 
-## Regions
+- New York: Hip-hop was invented at a rec-room party on Sedgwick Avenue in 1973, and five decades later the five boroughs still… — https://beatwick.com/cities/new-york.html
+- Los Angeles: Los Angeles is the music industry's company town, and it sounds like it: Dr. Dre's G-funk and the N.W.A lineage… — https://beatwick.com/cities/los-angeles.html
+- Toronto: Toronto spent decades as the stop between Chicago and Montreal, then Drake, The Weeknd, and Noah "40" Shebib built an… — https://beatwick.com/cities/toronto.html
+- Montréal: A French-speaking island that threw the world's biggest jazz festival and accidentally became indie rock's northern capital. Arcade Fire's funeral… — https://beatwick.com/cities/montreal.html
+- Nashville: Nashville runs on a songwriting economy no other city has: publishing houses on Music Row, co-writes as daily labor, and… — https://beatwick.com/cities/nashville.html
+- Atlanta: Trap was invented in Atlanta's Zone 6 and East Point basements, and now it's the default language of global pop.… — https://beatwick.com/cities/atlanta.html
+- New Orleans: The only American city where the funeral has a brass band and the parade never really ends. Jazz was born… — https://beatwick.com/cities/new-orleans.html
 
-North America: New York, Los Angeles, Toronto, Montreal, Nashville, Atlanta, New Orleans
-Latin America & Caribbean: São Paulo, Mexico City, Bogotá, Buenos Aires, Kingston
-Europe: London, Berlin, Paris, Amsterdam, Barcelona, Lisbon, Stockholm, Glasgow
-Africa & Middle East: Lagos, Johannesburg, Accra, Cairo
-Asia-Pacific: Tokyo, Seoul, Mumbai, Jakarta, Manila, Melbourne
+### Latin America & Caribbean
 
-## Dispatches (scene reports)
+- São Paulo: South America's biggest city makes the continent's loudest party music. Baile funk's bruxaria — raw, favela-born, 150 BPM and climbing… — https://beatwick.com/cities/sao-paulo.html
+- Mexico City: The biggest live crowds on earth gather in CDMX. Reggaetón and Latin trap fill stadiums like Foro Sol to the… — https://beatwick.com/cities/mexico-city.html
+- Bogotá: Latin alternative's laboratory sits at 2,600 meters, and the altitude does something to the music. Bomba Estéreo took cumbia into… — https://beatwick.com/cities/bogota.html
+- Buenos Aires: Trap argentino turned Buenos Aires' barrios into the Spanish-speaking world's rap capital. Duki, Cazzu, and Khea built the scene from… — https://beatwick.com/cities/buenos-aires.html
+- Kingston: Dancehall's living root. Reggae was born in Trench Town's yards, sound-system culture invented the remix and the DJ right here,… — https://beatwick.com/cities/kingston.html
 
-- London Is Still the World's A&R Desk — /articles/london-grime-desk.html
-- Afrobeats Ate the World. Lagos Barely Noticed. — /articles/lagos-afrobeats.html
-- City Pop Never Died. It Just Moved to Your Algorithm. — /articles/tokyo-city-pop.html
-- Nobody Does Live Like Mexico City — /articles/mexico-city-live.html
-- Techno Is Berlin's Civic Religion — /articles/berlin-techno.html
-- Baile Funk Is the Loudest Party on Earth — /articles/sao-paulo-funk.html
+### Europe
+
+- London: Grime was born on pirate radio in Bow, drill mutated in Brixton stairwells, and now every label on earth keeps… — https://beatwick.com/cities/london.html
+- Berlin: In Berlin, techno isn't nightlife — it's civic infrastructure, protected like a monument, argued about like public transport, and taken… — https://beatwick.com/cities/berlin.html
+- Paris: France is the biggest rap market on the planet outside America, and Paris is its engine room — from NTM's… — https://beatwick.com/cities/paris.html
+- Amsterdam: Every October the entire electronic music industry descends on Amsterdam for ADE, and the rest of the year the city… — https://beatwick.com/cities/amsterdam.html
+- Barcelona: Barcelona runs on a different clock: Sónar turned it into electronic music's annual summit, and a generation of Catalan artists… — https://beatwick.com/cities/barcelona.html
+- Lisbon: Kuduro came to Lisbon from Angola and never left — it mutated in the city's clubs into something faster, harder,… — https://beatwick.com/cities/lisbon.html
+- Stockholm: No city this size has any business writing this many of the world's biggest songs. From ABBA to the Cheiron… — https://beatwick.com/cities/stockholm.html
+- Glasgow: London gets the music press; Glasgow gets the bands. The Jesus and Mary Chain, Primal Scream, Teenage Fanclub, Mogwai, Belle… — https://beatwick.com/cities/glasgow.html
+
+### Africa & Middle East
+
+- Lagos: The loudest A&R desk on the planet sits in traffic on the Lekki-Epe Expressway. Afrobeats didn't go global — it… — https://beatwick.com/cities/lagos.html
+- Johannesburg: Joburg invented a genre from a bassline that sounds like a log drum being dropped down stairs, then watched the… — https://beatwick.com/cities/johannesburg.html
+- Accra: Ghana's sound has always traveled further than its borders suggest, and this decade Accra is having its second coming. Hiplife… — https://beatwick.com/cities/accra.html
+- Cairo: Mahraganat is the sound of Cairo's streets talking back — electronic shaabi born in working-class neighborhoods that the authorities tried… — https://beatwick.com/cities/cairo.html
+
+### Asia-Pacific
+
+- Tokyo: City pop died in 1989 and was resurrected by an algorithm — Tatsuro Yamashita and Mariya Takeuchi's glossy '80s funk… — https://beatwick.com/cities/tokyo.html
+- Seoul: Seoul is a music factory with better R&D than most tech companies — the K-pop machine of BTS and Stray… — https://beatwick.com/cities/seoul.html
+- Mumbai: Mumbai is Bollywood's capital, which means it's the capital of film music in a country where film music is the… — https://beatwick.com/cities/mumbai.html
+- Jakarta: Dangdut koplo is Indonesia's biggest musical export that the world hasn't noticed yet — a hyperkinetic folk-pop hybrid from Java… — https://beatwick.com/cities/jakarta.html
+- Manila: P-pop is the Philippines' answer to K-pop — and it's winning on home turf. SB19 and BINI turned idol training… — https://beatwick.com/cities/manila.html
+- Melbourne: Melbourne has more live music venues per capita than almost anywhere on Earth — this is the city that rallied… — https://beatwick.com/cities/melbourne.html
+
+## Artist spotlights (150)
+
+### North America
+
+- Cardi B: The Bronx's Loudest Success Story (New York): From Highbridge to the top of the Hot 100 — Belcalis Almánzar turned Bronx brashness into a pop empire. — https://beatwick.com/spotlights/new-york-cardi-b.html
+- LCD Soundsystem: Brooklyn's Dance-Punk Professors (New York): James Murphy made middle-aged anxiety danceable and turned a farewell show at MSG into a resurrection. — https://beatwick.com/spotlights/new-york-lcd-soundsystem.html
+- MIKE (New York): Brooklyn's underground poet laureate — MIKE's hazy, self-produced rap runs on his own 10k label and answers to nobody. — https://beatwick.com/spotlights/new-york-mike.html
+- Nas: Queensbridge's Poet Laureate (New York): Nas turned Queensbridge into literature. Thirty years after Illmatic, New York still rhymes in his sentences. — https://beatwick.com/spotlights/new-york-nas.html
+- Water From Your Eyes (New York): Brooklyn's weirdest pop duo — Nate Amos and Rachel Brown make experimental dance music that keeps accidentally becoming everyone's favorite record. — https://beatwick.com/spotlights/new-york-water-from-your-eyes.html
+- Billie Eilish: Highland Park's Bedroom Pop Revolutionary (Los Angeles): She recorded a global takeover in her brother's bedroom. LA's strangest pop star never had to leave the neighborhood to conquer it. — https://beatwick.com/spotlights/los-angeles-billie-eilish.html
+- Kendrick Lamar: Compton's Conscience (Los Angeles): A Pulitzer, a Super Bowl, and the most consequential rap career of the century — all traced back to Compton. — https://beatwick.com/spotlights/los-angeles-kendrick-lamar.html
+- Navy Blue (Los Angeles): Los Angeles-born skater turned underground-rap confessor — Navy Blue's drumless loops and warm jazz samples carry the city's quietest fire. — https://beatwick.com/spotlights/los-angeles-navy-blue.html
+- Pink Siifu (Los Angeles): The most prolific shape-shifter in underground rap — Pink Siifu's GUMBO'! folds jazz, punk, and Southern rap into one simmering pot. — https://beatwick.com/spotlights/los-angeles-pink-siifu.html
+- Snoop Dogg: Long Beach's Coolest Export (Los Angeles): Discovered by Dr. Dre, immortal by thirty, and still the smoothest voice in rap. Uncle Snoop is LA's permanent ambassador. — https://beatwick.com/spotlights/los-angeles-snoop-dogg.html
+- Alessia Cara: Brampton's Quiet Storm (Toronto): She sang about hating parties and won a Grammy. The GTA's most honest voice never had to shout. — https://beatwick.com/spotlights/toronto-alessia-cara.html
+- Drake: The 6 God Built Toronto's Music Economy (Toronto): Before Drake, Toronto was a feeder market. Then the kid from Degrassi turned the 6ix into a global sound. — https://beatwick.com/spotlights/toronto-drake.html
+- LOONY (Toronto): Scarborough's neo-soul secret — LOONY's JOYRiDE and soft thing earned Polaris longlists, Elton John's obsession, and a Metro Boomin sample. — https://beatwick.com/spotlights/toronto-loony.html
+- River Tiber (Toronto): Toronto's ghostwriter-in-plain-sight — River Tiber's falsetto has been sampled by Drake and Kendrick while his own records stay beautifully under the radar. — https://beatwick.com/spotlights/toronto-river-tiber.html
+- The Weeknd: Toronto After Dark (Toronto): From anonymous Scarborough mixtapes to the biggest song of the streaming era — Abel Tesfaye made the night sound expensive. — https://beatwick.com/spotlights/toronto-the-weeknd.html
+- Arcade Fire: Montreal's Indie-Rock Miracle (Montréal): A funeral that became a coronation: how a Montreal collective took Funeral from Mile End lofts to a Grammy for Album of the Year. — https://beatwick.com/spotlights/montreal-arcade-fire.html
+- Céline Dion: Quebec's Voice of the Century (Montréal): From Charlemagne to the world stage — the francophone powerhouse who became the best-selling artist Canada ever produced. — https://beatwick.com/spotlights/montreal-celine-dion.html
+- KAYTRANADA: Montreal's Groove Scientist (Montréal): From Haitian roots to Montreal basements to a Grammy — the producer who taught the world to dance at 100 BPM. — https://beatwick.com/spotlights/montreal-kaytranada.html
+- Lydia Képinski (Montréal): Montreal's francophone chaos-pop queen — Lydia Képinski turned a Francouvertes win into two Polaris-longlisted albums of pure theatrical pop. — https://beatwick.com/spotlights/montreal-lydia-kepinski.html
+- Ouri (Montréal): A classically trained cellist in Montreal's rave scene — Ouri fuses orchestral composition and electronic grit into something nobody else makes. — https://beatwick.com/spotlights/montreal-ouri.html
+- Becca Mancari (Nashville): East Nashville's genre escape artist — Becca Mancari went from Americana darling to polyrhythmic pop on the self-produced Left Hand. — https://beatwick.com/spotlights/nashville-becca-mancari.html
+- Chris Stapleton: Nashville's Songwriter Who Stepped Forward (Nashville): He wrote the hits for everyone else. Then Traveller made him the most respected voice in country music. — https://beatwick.com/spotlights/nashville-chris-stapleton.html
+- Dolly Parton: Nashville's Patron Saint (Nashville): She arrived in Nashville the day after high school graduation with a guitar and a plan. The city never stood a chance. — https://beatwick.com/spotlights/nashville-dolly-parton.html
+- Jack White: Nashville's Rock-and-Roll Contrarian (Nashville): The Detroit garage-rocker who moved his whole operation to Nashville and built the city's loudest independent institution. — https://beatwick.com/spotlights/nashville-jack-white.html
+- Madi Diaz (Nashville): Nashville's indie-folk survivor — Madi Diaz took 14 years, an ANTI- deal, and Harry Styles' tour band to get her due. History of a Feeling explains it all. — https://beatwick.com/spotlights/nashville-madi-diaz.html
+- Anycia (Atlanta): Atlanta's independent princess of trap — Anycia went viral on 'So What', self-released Princess Pop That, and never signed a deal. — https://beatwick.com/spotlights/atlanta-anycia.html
+- Outkast: Atlanta Invented the Future Twice (Atlanta): André 3000 and Big Boi turned East Point into the center of the hip-hop universe — and told the South it had something to say. — https://beatwick.com/spotlights/atlanta-outkast.html
+- Slimesito (Atlanta): Clayton County's bilingual plugg ghost — Slimesito has run Atlanta's underground since the SoundCloud era, no label deal in sight. — https://beatwick.com/spotlights/atlanta-slimesito.html
+- T.I.: The King of the South Holds Court (Atlanta): He named the genre, then ruled it. Bankhead's finest made trap a global language. — https://beatwick.com/spotlights/atlanta-ti.html
+- Usher: Atlanta's King of R&B (Atlanta): He moved to Atlanta as a teenager and never left the throne. Thirty years later, the Confessions still haven't been topped. — https://beatwick.com/spotlights/atlanta-usher.html
+- Big Freedia: The Queen of Bounce (New Orleans): She took New Orleans bounce from the housing projects to Beyoncé's Formation. The Queen diva remains undefeated. — https://beatwick.com/spotlights/new-orleans-big-freedia.html
+- HaSizzle (New Orleans): The self-proclaimed King of Bounce — HaSizzle's voice is New Orleans' secret weapon, sampled by Drake and storming Coachella. — https://beatwick.com/spotlights/new-orleans-hasizzle.html
+- Lil Wayne: New Orleans' Prodigy Who Never Left (New Orleans): Signed to Cash Money at nine, running rap by twenty-five. Hollygrove's greatest export turned work ethic into mythology. — https://beatwick.com/spotlights/new-orleans-lil-wayne.html
+- Mia Borders (New Orleans): New Orleans' independent soul queen — Mia Borders has released nine records on her own Blaxican Records, from Tipitina's to the Louisiana Philharmonic. — https://beatwick.com/spotlights/new-orleans-mia-borders.html
+- Trombone Shorty: Treme's Brass-Band Ambassador (New Orleans): Troy Andrews was leading brass bands at six. Now he's the man who carries New Orleans' second-line tradition to the world. — https://beatwick.com/spotlights/new-orleans-trombone-shorty.html
+
+### Latin America & Caribbean
+
+- Criolo (São Paulo): São Paulo's conscience with a microphone — rap that sounds like rain on concrete. — https://beatwick.com/spotlights/sao-paulo-criolo.html
+- Emicida (São Paulo): The battle-rap killer who built an empire and named an album after hope. — https://beatwick.com/spotlights/sao-paulo-emicida.html
+- MC Luanna (São Paulo): From São Paulo's baile circuit to shared bills with rap legends — MC Luanna makes lean, lethal funk that blew up track by track on her own terms. — https://beatwick.com/spotlights/sao-paulo-mc-luanna.html
+- Rita Lee (São Paulo): The queen of Brazilian rock — São Paulo's own, from Tropicália to eternity. — https://beatwick.com/spotlights/sao-paulo-rita-lee.html
+- Tasha & Tracie (São Paulo): São Paulo's twin rap queens stitch funk carioca to trap and rap, rhyming about Black culture, the periphery, and pure self-esteem — with Ludmilla, Djonga, and Gloria… — https://beatwick.com/spotlights/sao-paulo-tasha-tracie.html
+- Café Tacvba (Mexico City): Four kids from Satélite who became the most inventive band in rock en español. — https://beatwick.com/spotlights/mexico-city-cafe-tacvba.html
+- Foudeqush (Mexico City): Mexico City's alt-soul voice went from the capital's scene to the Black Panther: Wakanda Forever soundtrack — and her own album ANGELA is where the story really starts. — https://beatwick.com/spotlights/mexico-city-foudeqush.html
+- Meth Math (Mexico City): Three friends from Hermosillo who met making a horror film now run Mexico City's most cursed perreo — satanic, deconstructed reggaetón from the capital's DIY underground. — https://beatwick.com/spotlights/mexico-city-meth-math.html
+- Natalia Lafourcade (Mexico City): Mexico City's folk-song surgeon — intimate, precise, and quietly unstoppable. — https://beatwick.com/spotlights/mexico-city-natalia-lafourcade.html
+- Zoé (Mexico City): Mexico City's psychedelic romantics who proved the Unplugged format had a pulse. — https://beatwick.com/spotlights/mexico-city-zoe.html
+- Aterciopelados (Bogotá): Bogotá's alt-rock weirdos who made Andean weirdness anthemic. — https://beatwick.com/spotlights/bogota-aterciopelados.html
+- Bomba Estéreo (Bogotá): The Bogotá collective that turned Caribbean futurism into a global export. — https://beatwick.com/spotlights/bogota-bomba-estereo.html
+- Ghetto Kumbé (Bogotá): A masked trio from Colombia's coast turned Bogotá into their ritual ground — Afro-Caribbean drums folded into house, hip-hop, and bass on ZZK Records, with masks on and… — https://beatwick.com/spotlights/bogota-ghetto-kumbe.html
+- Las Añez (Bogotá): Twin sisters from Bogotá, two loop stations, and Colombian folk bent into impossible shapes — Las Añez have award-winning albums, Andrea Echeverri features, and… — https://beatwick.com/spotlights/bogota-las-anez.html
+- Monsieur Periné (Bogotá): Bogotá's swing-era dreamers who smuggled cumbia into a Parisian jazz club. — https://beatwick.com/spotlights/bogota-monsieur-perine.html
+- Bizarrap (Buenos Aires): The producer in the cap who turned a bedroom studio into Argentina's biggest export machine. — https://beatwick.com/spotlights/buenos-aires-bizarrap.html
+- Duki (Buenos Aires): From the Parque Rivadavia rap battles to the top of Latin trap — Almagro's favorite son. — https://beatwick.com/spotlights/buenos-aires-duki.html
+- Fin del Mundo (Buenos Aires): Buenos Aires' all-female shoegaze revelation — dreamy post-rock apocalypses, KEXP and Radio 3 spins, a first European tour, and an album called Todo Va Hacia el Mar. — https://beatwick.com/spotlights/buenos-aires-fin-del-mundo.html
+- Six Sex (Buenos Aires): The Buenos Aires club queen who invented ravetón — reggaetón dragged through the rave — went from SoundCloud experiments to Remezcla's #1 dance song of 2024 and a debut… — https://beatwick.com/spotlights/buenos-aires-six-sex.html
+- Soda Stereo (Buenos Aires): The trio that made Buenos Aires the capital of Spanish-language rock. — https://beatwick.com/spotlights/buenos-aires-soda-stereo.html
+- Bob Marley (Kingston): The prophet of Trench Town who made a tiny island's music the planet's second language. — https://beatwick.com/spotlights/kingston-bob-marley.html
+- Iotosh (Kingston): The three-time Grammy-nominated producer behind Koffee's West Indies and Jah9's Note to Self stepped out from behind the boards — Kingston's Iotosh is an artist now. — https://beatwick.com/spotlights/kingston-iotosh.html
+- Mortimer (Kingston): Kingston's most honest new reggae voice took a decade to make his debut — then dropped From Within, with Damian Marley, Kabaka Pyramid, and Lila Iké on the tracklist. — https://beatwick.com/spotlights/kingston-mortimer.html
+- Sean Paul (Kingston): Kingston's dancehall ambassador who made the whole world say 'dutty yeah'. — https://beatwick.com/spotlights/kingston-sean-paul.html
+- Vybz Kartel (Kingston): The Worl' Boss — dancehall's most prolific mind, back where he belongs: on stage. — https://beatwick.com/spotlights/kingston-vybz-kartel.html
+
+### Europe
+
+- Adele (London): Tottenham's once-in-a-generation voice — the BRIT School graduate who outsold everyone and stayed herself. — https://beatwick.com/spotlights/london-adele.html
+- Jim Legxacy (London): Catford's one-man genre blender wrote the decade's biggest UK rap hit, then signed to XL and made the weirdest, best record of 2025 anyway. — https://beatwick.com/spotlights/london-jim-legxacy.html
+- Odeal (London): The London alté crooner who turned a bedroom recording into a global R&B redefinition — LVRN signed, MOBO blessed, and still making it up in the studio. — https://beatwick.com/spotlights/london-odeal.html
+- Skepta (London): The Tottenham MC who carried grime on his back for a decade — then made it the world's problem. — https://beatwick.com/spotlights/london-skepta.html
+- Stormzy (London): The South London MC who took grime from YouTube freestyles to Glastonbury's Pyramid Stage. — https://beatwick.com/spotlights/london-stormzy.html
+- Ellen Allien (Berlin): BPitch Control's founder wrote the love letter Berlin's techno scene deserved — then spent 25 years running its best label. — https://beatwick.com/spotlights/berlin-ellen-allien.html
+- Moderat (Berlin): Two Berlin electronic institutions plus one ghostly voice — the supergroup that made techno cry. — https://beatwick.com/spotlights/berlin-moderat.html
+- Nene H (Berlin): Berlin-via-Istanbul funky techno with a heart — the UMAY founder whose grief record Ali became one of the underground's most honest albums. — https://beatwick.com/spotlights/berlin-nene-h.html
+- Paul Kalkbrenner (Berlin): Berlin's techno everyman — the DJ who carried the city's sound from the Bunker to the big screen. — https://beatwick.com/spotlights/berlin-paul-kalkbrenner.html
+- Ziúr (Berlin): The Berlin producer turning grindcore drums and smashing glass into club weapons — Planet Mu's most confrontational export, and the co-founder of the Boo Hoo night. — https://beatwick.com/spotlights/berlin-ziur.html
+- Aya Nakamura (Paris): The banlieue singer who made French the language of global R&B — one 'Djadja' at a time. — https://beatwick.com/spotlights/paris-aya-nakamura.html
+- Benjamin Epps (Paris): The Gabonese-born Paris MC keeping boom bap alive with a Jadakiss intro, a BET Hip Hop Award, and the sharpest French-language pen of his generation. — https://beatwick.com/spotlights/paris-benjamin-epps.html
+- Booba (Paris): French rap's undisputed heavyweight — three decades deep and still the name every new MC has to answer to. — https://beatwick.com/spotlights/paris-booba.html
+- Daft Punk (Paris): Two Parisians in robot helmets taught the whole planet to dance in French — then vanished at the height of their powers. — https://beatwick.com/spotlights/paris-daft-punk.html
+- Yoa (Paris): Paris' electro-pop prodigy went from theater kid to Victoires de la Musique revelation — La Favorite is the most fun French pop record in years. — https://beatwick.com/spotlights/paris-yoa.html
+- Afrojack (Amsterdam): Spijkenisse's wall of sound — the producer who made Dutch house hit like a truck and never turned it down. — https://beatwick.com/spotlights/amsterdam-afrojack.html
+- Tiësto (Amsterdam): The Breda kid who took trance to the Olympics and became the first DJ to outgrow the club entirely. — https://beatwick.com/spotlights/amsterdam-dj-tiesto.html
+- Martin Garrix (Amsterdam): The kid from Amstelveen who released 'Animals' at 17 and never left the top of dance music again. — https://beatwick.com/spotlights/amsterdam-martin-garrix.html
+- Tracey (Amsterdam): Tom Ruijg makes house and electro like a love letter to Detroit — the Amsterdam producer whose Skyfall rewired the Voyage Direct faithful. — https://beatwick.com/spotlights/amsterdam-tracey.html
+- upsammy (Amsterdam): Amsterdam's IDM naturalist turns melting ice and rustling leaves into Dekmantel-certified electronica — the De School residency that became a career. — https://beatwick.com/spotlights/amsterdam-upsammy.html
+- Bad Gyal (Barcelona): The Vilassar de Mar singer who took dancehall to Catalonia — and made Barcelona the capital of Spanish perreo. — https://beatwick.com/spotlights/barcelona-bad-gyal.html
+- Julieta (Barcelona): The Barcelona engineer-turned-pop auteur who self-produced her way from GarageBand to Primavera Sound — Catalan club romanticism at its finest. — https://beatwick.com/spotlights/barcelona-julieta.html
+- Mushkaa (Barcelona): Bad Gyal's little sister became Catalan urbano's most self-reliant star — self-released, singing in Catalan, and headlining festivals on her own terms. — https://beatwick.com/spotlights/barcelona-mushkaa.html
+- Rigoberta Bandini (Barcelona): Barcelona's theater kid turned pop provocateur — the voice that made 'Ay Mamá' a national anthem. — https://beatwick.com/spotlights/barcelona-rigoberta-bandini.html
+- Rosalía (Barcelona): A Catalan flamenco student rewired pop in three languages — and made Barcelona the center of the Latin avant-garde. — https://beatwick.com/spotlights/barcelona-rosalia.html
+- Buraka Som Sistema (Lisbon): The Lisbon collective that turned Angolan kuduro into a global club weapon — and made the suburbs the city's sound. — https://beatwick.com/spotlights/lisbon-buraka-som-sistema.html
+- Mariza (Lisbon): Fado's global ambassador — raised in Mouraria, the Lisbon quarter where the music was born. — https://beatwick.com/spotlights/lisbon-mariza.html
+- Nídia Minaj (Lisbon): The kuduro queen of Príncipe Discos who learned beat-making from YouTube tutorials and became Lisbon's most explosive electronic export. — https://beatwick.com/spotlights/lisbon-nidia-minaj.html
+- Papillon (Lisbon): The Sintra-line MC who turned underdog status into a sold-out Coliseu — Lisbon's most thoughtful rapper, three albums deep on his own label. — https://beatwick.com/spotlights/lisbon-papillon.html
+- Salvador Sobral (Lisbon): The jazz singer who won Eurovision by whispering — and gave Portugal its first victory. — https://beatwick.com/spotlights/lisbon-salvador-sobral.html
+- ABBA (Stockholm): Stockholm's most successful export isn't furniture — it's four Swedes in platform boots who wrote the pop playbook. — https://beatwick.com/spotlights/stockholm-abba.html
+- Avicii (Stockholm): The Stockholm producer who made EDM cry, sing, and feel something — gone at 28, still everywhere. — https://beatwick.com/spotlights/stockholm-avicii.html
+- GRANT (Stockholm): The Swedish indie-pop dramatist from a farm outside Stockholm whose Waterline earned a Grammis nod and a P3 Gold Future Artist crown. — https://beatwick.com/spotlights/stockholm-grant.html
+- Maja Francis (Stockholm): Sweden's 'Emo Dolly Parton' — the Stockholm indie-pop songwriter whose Anxious Angel closed Netflix's Love & Anarchy and whose Mama enlisted First Aid Kit. — https://beatwick.com/spotlights/stockholm-maja-francis.html
+- Robyn (Stockholm): Pop's patron saint of crying in the club — Stockholm's Robyn wrote the blueprint and never needed the crown. — https://beatwick.com/spotlights/stockholm-robyn.html
+- Belle and Sebastian (Glasgow): The shyest band in Glasgow became its most beloved — twee as a weapon, melodies as armor. — https://beatwick.com/spotlights/glasgow-belle-sebastian.html
+- Franz Ferdinand (Glasgow): Four art-school misfits who turned Glasgow's post-punk attic into the biggest guitar band of the 2000s. — https://beatwick.com/spotlights/glasgow-franz-ferdinand.html
+- Humour (Glasgow): Glasgow's feistiest post-punk quintet — NME-approved chaos, surreal lyrics, and a debut album Learning Greek that made the weirdness official. — https://beatwick.com/spotlights/glasgow-humour.html
+- Mogwai (Glasgow): Glasgow's loudest quiet band — five post-rock architects who built their own label and never looked back. — https://beatwick.com/spotlights/glasgow-mogwai.html
+- VLURE (Glasgow): Glasgow's trance-punk five-piece went from sticky indie venues to a Bobby Gillespie collaboration — Escalate is the sound of the city's subterranean dancefloors. — https://beatwick.com/spotlights/glasgow-vlure.html
+
+### Africa & Middle East
+
+- Asake (Lagos): Mr. Money fused Lagos street fuji with amapiano's log drum and became the fastest-rising star of the decade. — https://beatwick.com/spotlights/lagos-asake.html
+- Ayo Maff (Lagos): From the Bariga streets of Lagos to a chart-topping link-up with Fireboy DML — the self-styled Prince of the Street carrying street-hop into a new generation. — https://beatwick.com/spotlights/lagos-ayo-maff.html
+- Burna Boy (Lagos): The African Giant turned Lagos street wisdom into the world's default party language — and the city that raised him is still his loudest crowd. — https://beatwick.com/spotlights/lagos-burna-boy.html
+- Muyeez (Lagos): A teenager from Lagos who freestyled his way into Seyi Vibez's camp, topped the Nigerian charts on his debut single, and became street-pop's most convincing child… — https://beatwick.com/spotlights/lagos-muyeez.html
+- Wizkid (Lagos): Starboy turned a Surulere church choir into the smoothest voice in global pop — and named his biggest song after a Lagos intersection. — https://beatwick.com/spotlights/lagos-wizkid.html
+- Aymos (Johannesburg): A church choir kid from Tembisa who invented Afro-Yano — amapiano with soul and warmth — and sang his way onto every anthem the genre produced. — https://beatwick.com/spotlights/johannesburg-aymos.html
+- Black Coffee (Johannesburg): From Umlazi to a sold-out Madison Square Garden — the DJ who turned South African house into a global language. — https://beatwick.com/spotlights/johannesburg-black-coffee.html
+- DJ Maphorisa (Johannesburg): The most in-demand producer in African music — from Mafikizolo's biggest hit to amapiano's global throne. — https://beatwick.com/spotlights/johannesburg-dj-maphorisa.html
+- Kabza De Small (Johannesburg): The King of Amapiano turned a township bedroom setup into the most imitated sound on the planet. — https://beatwick.com/spotlights/johannesburg-kabza-de-small.html
+- Mas Musiq (Johannesburg): The Tembisa producer whose smooth chords and deep basslines gave amapiano its soul — a chart-topping hitmaker who still operates like the underground made him. — https://beatwick.com/spotlights/johannesburg-mas-musiq.html
+- Black Sherif (Accra): From Konongo to the top of Nigeria's charts — the most unlikely global star Ghana has ever produced, and the most honest voice in African music. — https://beatwick.com/spotlights/accra-black-sherif.html
+- Darkovibes (Accra): La Meme Gang's best-dressed enigma — the high priest of Accra's alté scene who put highlife, Ga rhythms and Jamestown pride back at the center of Ghanaian cool. — https://beatwick.com/spotlights/accra-darkovibes.html
+- Sarkodie (Accra): The fastest tongue in African rap built Ghana's hip-hop economy one December at a time. — https://beatwick.com/spotlights/accra-sarkodie.html
+- Stonebwoy (Accra): 1GAD — the dancehall king who made Ashaiman the loudest postcode in African music. — https://beatwick.com/spotlights/accra-stonebwoy.html
+- Worlasi (Accra): Accra's alté conscience — a rapper, singer, illustrator and festival founder who did it himself, then built a stage for everyone else. — https://beatwick.com/spotlights/accra-worlasi.html
+- 3Phaz (Cairo): An anonymous Cairo producer who rebuilt mahraganat for the international club — Pitchfork-listed, Boiler Room-approved, and still nobody knows his name. — https://beatwick.com/spotlights/cairo-3phaz.html
+- Amr Diab (Cairo): El Hadaba — the Hill. Four decades, thirty-plus albums, seven World Music Awards, and still the standard every Arab pop star is measured against. — https://beatwick.com/spotlights/cairo-amr-diab.html
+- El Waili (Cairo): Cairo's trippiest producer — a psychedelic shaabi visionary warping Egypt's street sound into something sci-fi, cinematic and entirely his own. — https://beatwick.com/spotlights/cairo-el-waili.html
+- Marwan Pablo (Cairo): The godfather of Egyptian trap — retired at the peak, returned like he'd never left, and changed Cairo's sound forever. — https://beatwick.com/spotlights/cairo-marwan-pablo.html
+- Wegz (Cairo): Alexandria made him, Cairo crowned him — the rapper who turned Egyptian-dialect trap into the region's biggest sound. — https://beatwick.com/spotlights/cairo-wegz.html
+
+### Asia-Pacific
+
+- Hikaru Utada (Tokyo): The voice that sold eight million copies of a debut and then walked away — twice. — https://beatwick.com/spotlights/tokyo-hikaru-utada.html
+- Kenshi Yonezu (Tokyo): The Vocaloid ghost from Tokushima who moved to Tokyo and became the voice of a generation's grief. — https://beatwick.com/spotlights/tokyo-kenshi-yonezu.html
+- Luby Sparks (Tokyo): Five Tokyo music nerds who sing in English, worship at the altar of Lush, and turned a university club breakup into the city's best shoegaze band. — https://beatwick.com/spotlights/tokyo-luby-sparks.html
+- Ryuichi Sakamoto (Tokyo): Tokyo's most restless genius — pop star, film composer, activist — never stopped remaking the city's sound. — https://beatwick.com/spotlights/tokyo-ryuichi-sakamoto.html
+- Tohji (Tokyo): Tokyo's most elusive rap figure: the Mall Boyz MC who turned suburban mall culture and trance into the sound of the city's underground. — https://beatwick.com/spotlights/tokyo-tohji.html
+- BTS (Seoul): From a cramped Seoul dorm to the biggest band on the planet — BTS never left the city behind, they carried it with them. — https://beatwick.com/spotlights/seoul-bts.html
+- G-Dragon (Seoul): Seoul's fashion-alien pop auteur — half the reason K-pop looks the way it does. — https://beatwick.com/spotlights/seoul-g-dragon.html
+- IU (Seoul): Seoul's 'nation's little sister' who grew up in public and became the city's most trusted voice. — https://beatwick.com/spotlights/seoul-iu.html
+- Parannoul (Seoul): Seoul's anonymous bedroom student who accidentally became the global face of Korean shoegaze — an 8.0 from Pitchfork and still no name. — https://beatwick.com/spotlights/seoul-parannoul.html
+- Rad Museum (Seoul): The DEAN-discovered alt-R&B singer who designs his own album covers, earned KMA nominations on his very first EP, and makes sadness sound expensive. — https://beatwick.com/spotlights/seoul-rad-museum.html
+- A.R. Rahman (Mumbai): Chennai-born, Mumbai-made — the composer who dragged Bollywood's sound into the future, then scored Hollywood. — https://beatwick.com/spotlights/mumbai-a-r-rahman.html
+- Divine (Mumbai): From the chawls of Mumbai to Bollywood's biggest stage — Divine made the city's streets rhyme. — https://beatwick.com/spotlights/mumbai-divine.html
+- Kaam Bhaari (Mumbai): From Kandivali's streets to Gully Boy to his own label Art Nagar — Mumbai's rawest rapper did it the hard way and never blinked. — https://beatwick.com/spotlights/mumbai-kaam-bhaari.html
+- Shreya Ghoshal (Mumbai): She won a TV contest at 16, sang for Devdas at 18, and never gave the microphone back. — https://beatwick.com/spotlights/mumbai-shreya-ghoshal.html
+- The Yellow Diary (Mumbai): Five Mumbai musicians who built an indie empire out of one song — and made a debut video about a child suicide bomber the country couldn't look away from. — https://beatwick.com/spotlights/mumbai-yellow-diary.html
+- Agnez Mo (Jakarta): Jakarta's child star who outgrew the country's pop machine and took on America on her own terms. — https://beatwick.com/spotlights/jakarta-agnez-mo.html
+- Hindia (Jakarta): The .Feast frontman who built a second identity as Jakarta's most honest singer-songwriter — and turned two decades of feeling into a movement. — https://beatwick.com/spotlights/jakarta-hindia.html
+- Iwan Fals (Jakarta): Indonesia's protest-singing conscience — banned by a dictator, beloved by everyone else. — https://beatwick.com/spotlights/jakarta-iwan-fals.html
+- Jason Ranti (Jakarta): Jakarta's folk-poet troublemaker — the painter-turned-songwriter who set classic Indonesian poetry to guitar and made the city his co-writer. — https://beatwick.com/spotlights/jakarta-jason-ranti.html
+- Rich Brian (Jakarta): A homeschooled kid from West Jakarta learned English from YouTube and accidentally became Indonesia's first global rap star. — https://beatwick.com/spotlights/jakarta-rich-brian.html
+- Ben&Ben (Manila): Twin brothers, nine members, one giant folk-pop hug — Ben&Ben turned Manila's hugot into anthems. — https://beatwick.com/spotlights/manila-ben-ben.html
+- Eraserheads (Manila): The band that gave the Philippines its songbook — and proved you could sing in Tagalog and conquer a nation. — https://beatwick.com/spotlights/manila-eraserheads.html
+- Munimuni (Manila): Quezon City's indie-folk poets turned Tagalog introspection into 'makata pop' — and took a pandemic hiatus just to come back bigger. — https://beatwick.com/spotlights/manila-munimuni.html
+- The Ridleys (Manila): Named for Daisy Ridley on a dare, raised on UST battle-of-the-bands stages — Manila's most earnest indie-folk band just headlined their own show. — https://beatwick.com/spotlights/manila-ridleys.html
+- SB19 (Manila): Trained like K-pop, sung in Filipino — SB19 built P-pop from a Manila practice room. — https://beatwick.com/spotlights/manila-sb19.html
+- Acopia (Melbourne): Naarm's dream-pop trio makes music for yearners — three albums in three years, Pitchfork's blessing, and a sold-out London show to prove it. — https://beatwick.com/spotlights/melbourne-acopia.html
+- Amyl and the Sniffers (Melbourne): Melbourne pub rock with its shirt off — four friends, two chords, zero interest in your approval. — https://beatwick.com/spotlights/melbourne-amyl-and-the-sniffers.html
+- Courtney Barnett (Melbourne): Melbourne's deadpan poet laureate turned rambling indie rock into an international language. — https://beatwick.com/spotlights/melbourne-courtney-barnett.html
+- King Gizzard & the Lizard Wizard (Melbourne): Melbourne's most prolific band turned weirdness into a work ethic — and the work ethic into a cult. — https://beatwick.com/spotlights/melbourne-king-gizzard.html
+- Sleep D (Melbourne): The DIY duo behind Butter Sessions — pillars of Melbourne's underground who turned bush doofs and chamber orchestras into one rave. — https://beatwick.com/spotlights/melbourne-sleep-d.html
+
+## Scene reports & features (16)
+
+- Techno Is Berlin's Civic Religion: Churches get tax breaks. Berlin's clubs got UNESCO status. In the German capital, the dancefloor is a sacred space — and the city finally admitted it. — https://beatwick.com/articles/berlin-techno.html
+- Buenos Aires Invented Stadium Rock en Español — Then Outgrew It: From Spinetta to Soda Stereo to Duki: the porteño stadium gene never died. It just changed genres. — https://beatwick.com/articles/buenos-aires-rock-nacional.html
+- Cairo Is the Loudest City on Earth. Nobody Is Sorry.: Mahraganat was born in the city's working-class neighborhoods, survived a government ban, and became the Arab world's biggest export. The volume was never the point. The… — https://beatwick.com/articles/cairo-decibel-city.html
+- The Log Drum Heard Around the World: Amapiano started in Joburg's townships with a bassline that sounds like furniture falling down stairs. Now the whole planet is dancing to it — and the city is already… — https://beatwick.com/articles/johannesburg-amapiano-log-drum.html
+- The Sound System Is Still Kingston's Real Record Label: Long before algorithms, Kingston's street dances decided what the world would hear. The selector never lost that job — he just got louder. — https://beatwick.com/articles/kingston-sound-system.html
+- Afrobeats Ate the World. Lagos Barely Noticed.: The world thinks it just discovered Afrobeats. Lagos has been running this playbook for twenty years — and the city is already bored with the hype cycle. — https://beatwick.com/articles/lagos-afrobeats.html
+- Brixton Academy Came Back From the Dead: Sixteen months dark after the 2022 tragedy, London's greatest room reopened — because the city refused to let it die. — https://beatwick.com/articles/london-brixton-academy.html
+- London Is Still the World's A&R Desk: Grime grew up, drill went global, and UK rap built its own economy — and every major label on earth still shops for sounds in London first. — https://beatwick.com/articles/london-grime-desk.html
+- Melbourne's Band Rooms Are the Real Music Industry: Forget the labels: Melbourne's sticky-carpet band rooms — the Tote, the Corner, the Forum — are where the city's music actually gets made. — https://beatwick.com/articles/melbourne-band-rooms.html
+- Nobody Does Live Like Mexico City: Sixty-five thousand people singing louder than the PA. Foro Sol is now Estadio GNP Seguros — same roar, new name, and the loudest live crowds on earth. — https://beatwick.com/articles/mexico-city-live.html
+- Nashville Was Never Just Country: Beyond the honky-tonks, Music City runs a parallel economy of garage rock, indie weirdos, and soul singers. A scene report from the other Nashville. — https://beatwick.com/articles/nashville-beyond-country.html
+- The Second Line Is New Orleans' Real Music Industry: Forget the clubs and the festivals. The Social Aid & Pleasure Clubs have been running the city's music economy for over a century — one parade at a time. — https://beatwick.com/articles/new-orleans-second-line.html
+- Baile Funk Is the Loudest Party on Earth: Born in the favelas, sung at 150 BPM, banned, bootlegged, and now unavoidable. Funk didn't climb into Brazilian pop — it swallowed it. — https://beatwick.com/articles/sao-paulo-funk.html
+- Seoul's Trainee System Is Pop Music's Most Ruthless Instrument: Inside the idol trainee pipeline: dawn-to-midnight practice rooms, monthly evaluations, and the machine that built K-pop. — https://beatwick.com/articles/seoul-trainee-system.html
+- Stockholm Writes Everyone's Pop Songs: How a tiny Stockholm studio built the modern hit — and why half your favorite songs were written within ten miles of the ABBA museum. — https://beatwick.com/articles/stockholm-song-factory.html
+- City Pop Never Died. It Just Moved to Your Algorithm.: Mariya Takeuchi's 'Plastic Love' sat on YouTube for years, then conquered the world. Now Tokyo's new generation rides the same wave — on purpose. — https://beatwick.com/articles/tokyo-city-pop.html
