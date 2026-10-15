@@ -1,1293 +1,248 @@
 {
  "london": {
   "name": "Beatwick: London",
-  "uri": "spotify:playlist:3HLWOdb46rNeaCha9nyjAa",
-  "url": "https://open.spotify.com/playlist/3HLWOdb46rNeaCha9nyjAa",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Vossi Bop",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:5DXKtoZLm31msT7tNGNHLG",
-    "url": "https://open.spotify.com/track/5DXKtoZLm31msT7tNGNHLG",
-    "explicit": true
-   },
-   {
-    "title": "18HUNNA (feat. Dave)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2tC6dm3WkOKYcgS2nZybmg",
-    "url": "https://open.spotify.com/track/2tC6dm3WkOKYcgS2nZybmg",
-    "explicit": true
-   },
-   {
-    "title": "Shut Up",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:4P8dRfSz0LBgyWfjod6v3J",
-    "url": "https://open.spotify.com/track/4P8dRfSz0LBgyWfjod6v3J",
-    "explicit": true
-   },
-   {
-    "title": "Wanna Know",
-    "artist": "Dave",
-    "uri": "spotify:track:3a8S52AbaYoYZh8aHG5w4M",
-    "url": "https://open.spotify.com/track/3a8S52AbaYoYZh8aHG5w4M",
-    "explicit": false
-   },
-   {
-    "title": "Sprinter",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:6NYbDTmstd7JSUWl2hVBqR",
-    "url": "https://open.spotify.com/track/6NYbDTmstd7JSUWl2hVBqR",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:4TDZNckUfYMdzBGvP1OuFY",
+  "url": "https://open.spotify.com/playlist/4TDZNckUfYMdzBGvP1OuFY",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "los-angeles": {
   "name": "Beatwick: Los Angeles",
-  "uri": "spotify:playlist:7HSUpZEHcktaIo5IsJgBJn",
-  "url": "https://open.spotify.com/playlist/7HSUpZEHcktaIo5IsJgBJn",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "HUMBLE.",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:7KXjTSCq5nL1LoYtL7XAwS",
-    "url": "https://open.spotify.com/track/7KXjTSCq5nL1LoYtL7XAwS",
-    "explicit": true
-   },
-   {
-    "title": "Nuthin' But A \"G\" Thang",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:5Tbpp3OLLClPJF8t1DmrFD",
-    "url": "https://open.spotify.com/track/5Tbpp3OLLClPJF8t1DmrFD",
-    "explicit": true
-   },
-   {
-    "title": "BIRDS OF A FEATHER",
-    "artist": "Billie Eilish",
-    "uri": "spotify:track:6dOtVTDdiauQNBQEDOtlAB",
-    "url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB",
-    "explicit": false
-   },
-   {
-    "title": "Sweater Weather",
-    "artist": "The Neighbourhood",
-    "uri": "spotify:track:2QjOHCTQ1Jl3zawyYOpxh6",
-    "url": "https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6",
-    "explicit": false
-   },
-   {
-    "title": "Californication",
-    "artist": "Red Hot Chili Peppers",
-    "uri": "spotify:track:48UPSzbZjgc449aqz8bxox",
-    "url": "https://open.spotify.com/track/48UPSzbZjgc449aqz8bxox",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:3j6tCJ9XcYMSZSdbXiz6oO",
+  "url": "https://open.spotify.com/playlist/3j6tCJ9XcYMSZSdbXiz6oO",
+  "track_count": 23,
+  "tracks": [],
   "missing": []
  },
  "new-york": {
   "name": "Beatwick: New York",
-  "uri": "spotify:playlist:63nmOLkHpKy2fqIhMUP2ob",
-  "url": "https://open.spotify.com/playlist/63nmOLkHpKy2fqIhMUP2ob",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Welcome To The Party",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:16PAC7NLpbryofiPTlqTFK",
-    "url": "https://open.spotify.com/track/16PAC7NLpbryofiPTlqTFK",
-    "explicit": true
-   },
-   {
-    "title": "Deli",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:5JYPXqMwYc0zTODQdjMEZN",
-    "url": "https://open.spotify.com/track/5JYPXqMwYc0zTODQdjMEZN",
-    "explicit": true
-   },
-   {
-    "title": "Enough (Miami)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:3j4AWNKYVeL9njKINCTzKm",
-    "url": "https://open.spotify.com/track/3j4AWNKYVeL9njKINCTzKm",
-    "explicit": true
-   },
-   {
-    "title": "Juicy",
-    "artist": "The Notorious B.I.G.",
-    "uri": "spotify:track:2AP7m2dBb8ULTx4Gc1rdMc",
-    "url": "https://open.spotify.com/track/2AP7m2dBb8ULTx4Gc1rdMc",
-    "explicit": false
-   },
-   {
-    "title": "Last Nite",
-    "artist": "The Strokes",
-    "uri": "spotify:track:3SUusuA9jH1v6PVwtYMbdv",
-    "url": "https://open.spotify.com/track/3SUusuA9jH1v6PVwtYMbdv",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:1RFz33SP49gNvWmxlfsVEy",
+  "url": "https://open.spotify.com/playlist/1RFz33SP49gNvWmxlfsVEy",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "toronto": {
   "name": "Beatwick: Toronto",
-  "uri": "spotify:playlist:7Dv21s1Q3GHnNTQuhmeHNW",
-  "url": "https://open.spotify.com/playlist/7Dv21s1Q3GHnNTQuhmeHNW",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Blinding Lights",
-    "artist": "The Weeknd",
-    "uri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b",
-    "url": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
-    "explicit": false
-   },
-   {
-    "title": "One Dance",
-    "artist": "Drake",
-    "uri": "spotify:track:1zi7xx7UVEFkmKfv06H8x0",
-    "url": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
-    "explicit": false
-   },
-   {
-    "title": "Get You (feat. Kali Uchis)",
-    "artist": "Daniel Caesar",
-    "uri": "spotify:track:2uP6t2J5MEwhr9rDkAAzwh",
-    "url": "https://open.spotify.com/track/2uP6t2J5MEwhr9rDkAAzwh",
-    "explicit": false
-   },
-   {
-    "title": "Hotline Bling",
-    "artist": "Drake",
-    "uri": "spotify:track:0wwPcA6wtMf6HUMpIRdeP7",
-    "url": "https://open.spotify.com/track/0wwPcA6wtMf6HUMpIRdeP7",
-    "explicit": false
-   },
-   {
-    "title": "The Hills",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:7fBv7CLKzipRk6EC6TWHOB",
-    "url": "https://open.spotify.com/track/7fBv7CLKzipRk6EC6TWHOB",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:52g5kQWTt20Inp6axkJDHp",
+  "url": "https://open.spotify.com/playlist/52g5kQWTt20Inp6axkJDHp",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "montreal": {
   "name": "Beatwick: Montreal",
-  "uri": "spotify:playlist:39TdUbhYw0oFBoynFiFs3l",
-  "url": "https://open.spotify.com/playlist/39TdUbhYw0oFBoynFiFs3l",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "GLOWED UP",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:4v20N4W83XDJORt7WCedII",
-    "url": "https://open.spotify.com/track/4v20N4W83XDJORt7WCedII",
-    "explicit": true
-   },
-   {
-    "title": "Oblivion",
-    "artist": "Grimes",
-    "uri": "spotify:track:3LGsgpx4TfxhXbr07OFKqs",
-    "url": "https://open.spotify.com/track/3LGsgpx4TfxhXbr07OFKqs",
-    "explicit": false
-   },
-   {
-    "title": "Show Me How",
-    "artist": "Men I Trust",
-    "uri": "spotify:track:75IQVo8hqI1iwVZyvkN2VT",
-    "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT",
-    "explicit": false
-   },
-   {
-    "title": "Wake Up",
-    "artist": "Arcade Fire",
-    "uri": "spotify:track:6Hmj7SrLRbreLVfVS7mV1S",
-    "url": "https://open.spotify.com/track/6Hmj7SrLRbreLVfVS7mV1S",
-    "explicit": false
-   },
-   {
-    "title": "Hallelujah",
-    "artist": "Leonard Cohen",
-    "uri": "spotify:track:7yzbimr8WVyAtBX3Eg6UL9",
-    "url": "https://open.spotify.com/track/7yzbimr8WVyAtBX3Eg6UL9",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:1LGQsy11Cz1PLgoic0WyJW",
+  "url": "https://open.spotify.com/playlist/1LGQsy11Cz1PLgoic0WyJW",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "nashville": {
   "name": "Beatwick: Nashville",
-  "uri": "spotify:playlist:1SsXOmjhwSa7ltEhdlMXCw",
-  "url": "https://open.spotify.com/playlist/1SsXOmjhwSa7ltEhdlMXCw",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "A Bar Song (Tipsy)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2FQrifJ1N335Ljm3TjTVVf",
-    "url": "https://open.spotify.com/track/2FQrifJ1N335Ljm3TjTVVf",
-    "explicit": true
-   },
-   {
-    "title": "Tennessee Whiskey",
-    "artist": "Chris Stapleton",
-    "uri": "spotify:track:3fqwjXwUGN6vbzIwvyFMhx",
-    "url": "https://open.spotify.com/track/3fqwjXwUGN6vbzIwvyFMhx",
-    "explicit": false
-   },
-   {
-    "title": "Before He Cheats",
-    "artist": "Carrie Underwood",
-    "uri": "spotify:track:0ZUo4YjG4saFnEJhdWp9Bt",
-    "url": "https://open.spotify.com/track/0ZUo4YjG4saFnEJhdWp9Bt",
-    "explicit": false
-   },
-   {
-    "title": "Jolene",
-    "artist": "Dolly Parton",
-    "uri": "spotify:track:2SpEHTbUuebeLkgs9QB7Ue",
-    "url": "https://open.spotify.com/track/2SpEHTbUuebeLkgs9QB7Ue",
-    "explicit": false
-   },
-   {
-    "title": "Ring of Fire",
-    "artist": "Johnny Cash",
-    "uri": "spotify:track:5rDkA2TFOImbiVenmnE9r4",
-    "url": "https://open.spotify.com/track/5rDkA2TFOImbiVenmnE9r4",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:64qmy25NP6gfS5EAvOSmwf",
+  "url": "https://open.spotify.com/playlist/64qmy25NP6gfS5EAvOSmwf",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "atlanta": {
   "name": "Beatwick: Atlanta",
-  "uri": "spotify:playlist:17F9I5OA5Ch29hK8VfO7qN",
-  "url": "https://open.spotify.com/playlist/17F9I5OA5Ch29hK8VfO7qN",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Mask Off",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:0VgkVdmE4gld66l8iyGjgx",
-    "url": "https://open.spotify.com/track/0VgkVdmE4gld66l8iyGjgx",
-    "explicit": true
-   },
-   {
-    "title": "Walk It Talk It",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:6n4U3TlzUGhdSFbUUhTvLP",
-    "url": "https://open.spotify.com/track/6n4U3TlzUGhdSFbUUhTvLP",
-    "explicit": true
-   },
-   {
-    "title": "Like That",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2tudvzsrR56uom6smgOcSf",
-    "url": "https://open.spotify.com/track/2tudvzsrR56uom6smgOcSf",
-    "explicit": true
-   },
-   {
-    "title": "Ms. Jackson",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:0I3q5fE6wg7LIfHGngUTnV",
-    "url": "https://open.spotify.com/track/0I3q5fE6wg7LIfHGngUTnV",
-    "explicit": true
-   },
-   {
-    "title": "No Hands (feat. Roscoe Dash & Wale)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:03tqyYWC9Um2ZqU0ZN849H",
-    "url": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:1wnonscailj39U7opHi9vv",
+  "url": "https://open.spotify.com/playlist/1wnonscailj39U7opHi9vv",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "new-orleans": {
   "name": "Beatwick: New Orleans",
-  "uri": "spotify:playlist:4amuzEr5Ai1unN1kyYdv5G",
-  "url": "https://open.spotify.com/playlist/4amuzEr5Ai1unN1kyYdv5G",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "A Milli",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:6ScJMrlpiLfZUGtWp4QIVt",
-    "url": "https://open.spotify.com/track/6ScJMrlpiLfZUGtWp4QIVt",
-    "explicit": true
-   },
-   {
-    "title": "Explode",
-    "artist": "Big Freedia",
-    "uri": "spotify:track:7CMfPwodyj6K2Envg1qxWa",
-    "url": "https://open.spotify.com/track/7CMfPwodyj6K2Envg1qxWa",
-    "explicit": false
-   },
-   {
-    "title": "Do Whatcha Wanna",
-    "artist": "Rebirth Brass Band",
-    "uri": "spotify:track:5UqzRN9qi2oxmKWff9oIRC",
-    "url": "https://open.spotify.com/track/5UqzRN9qi2oxmKWff9oIRC",
-    "explicit": false
-   },
-   {
-    "title": "Back That Azz Up",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:6o2g1BJvtYQssH84kBYs7y",
-    "url": "https://open.spotify.com/track/6o2g1BJvtYQssH84kBYs7y",
-    "explicit": true
-   },
-   {
-    "title": "What A Wonderful World",
-    "artist": "Louis Armstrong",
-    "uri": "spotify:track:29U7stRjqHU6rMiS8BfaI9",
-    "url": "https://open.spotify.com/track/29U7stRjqHU6rMiS8BfaI9",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:360RrAkKesx5SrAWdnMSTv",
+  "url": "https://open.spotify.com/playlist/360RrAkKesx5SrAWdnMSTv",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "sao-paulo": {
   "name": "Beatwick: São Paulo",
-  "uri": "spotify:playlist:3qcJwKFg3RA6e46GGFGErj",
-  "url": "https://open.spotify.com/playlist/3qcJwKFg3RA6e46GGFGErj",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Não Existe Amor em SP",
-    "artist": "Criolo",
-    "uri": "spotify:track:0rnFlWFOfTRmVQVm28DK09",
-    "url": "https://open.spotify.com/track/0rnFlWFOfTRmVQVm28DK09",
-    "explicit": false
-   },
-   {
-    "title": "Envolver",
-    "artist": "Anitta",
-    "uri": "spotify:track:3IAfUEeaXRX9s9UdKOJrFI",
-    "url": "https://open.spotify.com/track/3IAfUEeaXRX9s9UdKOJrFI",
-    "explicit": false
-   },
-   {
-    "title": "Tá OK",
-    "artist": "DENNIS, MC Kevin o Chris",
-    "uri": "spotify:track:0fABszUFNbNq9IW503Gj8v",
-    "url": "https://open.spotify.com/track/0fABszUFNbNq9IW503Gj8v",
-    "explicit": false
-   },
-   {
-    "title": "AmarElo (Sample: Sujeito de Sorte - Belchior)",
-    "artist": "Emicida",
-    "uri": "spotify:track:77Q9V19uxIJxDmpJJpsabO",
-    "url": "https://open.spotify.com/track/77Q9V19uxIJxDmpJJpsabO",
-    "explicit": false
-   },
-   {
-    "title": "DANÇARINA",
-    "artist": "PEDRO SAMPAIO",
-    "uri": "spotify:track:5zNxUkUW9WiV5oyg6gh2wB",
-    "url": "https://open.spotify.com/track/5zNxUkUW9WiV5oyg6gh2wB",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:58OHHhtuO9FEGsfdLXAn4q",
+  "url": "https://open.spotify.com/playlist/58OHHhtuO9FEGsfdLXAn4q",
+  "track_count": 23,
+  "tracks": [],
   "missing": []
  },
  "mexico-city": {
   "name": "Beatwick: Mexico City",
-  "uri": "spotify:playlist:26Hmf7rbZ3UI3y43MNL43f",
-  "url": "https://open.spotify.com/playlist/26Hmf7rbZ3UI3y43MNL43f",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Eres",
-    "artist": "Café Tacvba",
-    "uri": "spotify:track:6kdCN6gTWLcLxmLXoUcwuI",
-    "url": "https://open.spotify.com/track/6kdCN6gTWLcLxmLXoUcwuI",
-    "explicit": false
-   },
-   {
-    "title": "Hasta la Raíz",
-    "artist": "Natalia Lafourcade",
-    "uri": "spotify:track:3lGMtkONrZdJ8kTCg6KIFf",
-    "url": "https://open.spotify.com/track/3lGMtkONrZdJ8kTCg6KIFf",
-    "explicit": false
-   },
-   {
-    "title": "Cómo Te Voy A Olvidar",
-    "artist": "Los Ángeles Azules",
-    "uri": "spotify:track:51dNexiESqcJLsGLrmg1Nv",
-    "url": "https://open.spotify.com/track/51dNexiESqcJLsGLrmg1Nv",
-    "explicit": false
-   },
-   {
-    "title": "17 Años",
-    "artist": "Los Ángeles Azules",
-    "uri": "spotify:track:1Y372uxsCkKqNclj2ercap",
-    "url": "https://open.spotify.com/track/1Y372uxsCkKqNclj2ercap",
-    "explicit": false
-   },
-   {
-    "title": "Labios Rotos - En Vivo Desde México / 2010",
-    "artist": "Zoé",
-    "uri": "spotify:track:1nULBrlzWatdcjA2ZctIMv",
-    "url": "https://open.spotify.com/track/1nULBrlzWatdcjA2ZctIMv",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:2NoaesHDByG4eOyFIV9kYZ",
+  "url": "https://open.spotify.com/playlist/2NoaesHDByG4eOyFIV9kYZ",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "bogota": {
   "name": "Beatwick: Bogotá",
-  "uri": "spotify:playlist:6Cp9be6SUhvNu8xoOr6dl8",
-  "url": "https://open.spotify.com/playlist/6Cp9be6SUhvNu8xoOr6dl8",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Soy Yo",
-    "artist": "Bomba Estéreo",
-    "uri": "spotify:track:4Egb5xP6cniUx0kgZd5zLB",
-    "url": "https://open.spotify.com/track/4Egb5xP6cniUx0kgZd5zLB",
-    "explicit": false
-   },
-   {
-    "title": "Nuestra Canción",
-    "artist": "Monsieur Periné",
-    "uri": "spotify:track:5reQI13tWWYDLMrGcUF4Mk",
-    "url": "https://open.spotify.com/track/5reQI13tWWYDLMrGcUF4Mk",
-    "explicit": false
-   },
-   {
-    "title": "Bolero Falaz",
-    "artist": "Aterciopelados",
-    "uri": "spotify:track:5yMXpZhVnUAFT154F3MQ8G",
-    "url": "https://open.spotify.com/track/5yMXpZhVnUAFT154F3MQ8G",
-    "explicit": false
-   },
-   {
-    "title": "To My Love",
-    "artist": "Bomba Estéreo",
-    "uri": "spotify:track:6z1VtU0MCGo666iKiajfhp",
-    "url": "https://open.spotify.com/track/6z1VtU0MCGo666iKiajfhp",
-    "explicit": false
-   },
-   {
-    "title": "Fiesta",
-    "artist": "Bomba Estéreo",
-    "uri": "spotify:track:6lMlMXL2Wk4xT2U1D09iLm",
-    "url": "https://open.spotify.com/track/6lMlMXL2Wk4xT2U1D09iLm",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:7w3ApABECjVEmKxbskesWp",
+  "url": "https://open.spotify.com/playlist/7w3ApABECjVEmKxbskesWp",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "buenos-aires": {
   "name": "Beatwick: Buenos Aires",
-  "uri": "spotify:playlist:26QujwSmeKRZeaPPOkFRGH",
-  "url": "https://open.spotify.com/playlist/26QujwSmeKRZeaPPOkFRGH",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Quevedo: Bzrp Music Sessions, Vol. 52/66",
-    "artist": "Bizarrap, Quevedo",
-    "uri": "spotify:track:2tTmW7RDtMQtBk7m2rYeSw",
-    "url": "https://open.spotify.com/track/2tTmW7RDtMQtBk7m2rYeSw",
-    "explicit": false
-   },
-   {
-    "title": "Goteo",
-    "artist": "Duki",
-    "uri": "spotify:track:1EoEU4HY57qaITp06TkC6B",
-    "url": "https://open.spotify.com/track/1EoEU4HY57qaITp06TkC6B",
-    "explicit": false
-   },
-   {
-    "title": "De Música Ligera",
-    "artist": "Soda Stereo",
-    "uri": "spotify:track:2WD9ggmpZE7Wodh3qVVCgg",
-    "url": "https://open.spotify.com/track/2WD9ggmpZE7Wodh3qVVCgg",
-    "explicit": false
-   },
-   {
-    "title": "La Triple T",
-    "artist": "TINI",
-    "uri": "spotify:track:7kYbxvrGXv8cmKjkqgqhrw",
-    "url": "https://open.spotify.com/track/7kYbxvrGXv8cmKjkqgqhrw",
-    "explicit": false
-   },
-   {
-    "title": "Los del Espacio",
-    "artist": "LIT killah, Tiago PZK, Maria Becerra, Duki",
-    "uri": "spotify:track:1Hs1uUl8o2VtDp1DABFq0O",
-    "url": "https://open.spotify.com/track/1Hs1uUl8o2VtDp1DABFq0O",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:6dfs1rEvtbAvdNaoJmLx4I",
+  "url": "https://open.spotify.com/playlist/6dfs1rEvtbAvdNaoJmLx4I",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "kingston": {
   "name": "Beatwick: Kingston",
-  "uri": "spotify:playlist:50PIWa17xS2OgZOV9kc7wU",
-  "url": "https://open.spotify.com/playlist/50PIWa17xS2OgZOV9kc7wU",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Clarks",
-    "artist": "Vybz Kartel",
-    "uri": "spotify:track:6LKeLk5IBQUb9eoXidchGQ",
-    "url": "https://open.spotify.com/track/6LKeLk5IBQUb9eoXidchGQ",
-    "explicit": false
-   },
-   {
-    "title": "Go Down Deh (feat. Sean Paul & Shaggy)",
-    "artist": "Spice, Sean Paul, Shaggy",
-    "uri": "spotify:track:0VzBKgimNRMauaqzT2rEnS",
-    "url": "https://open.spotify.com/track/0VzBKgimNRMauaqzT2rEnS",
-    "explicit": false
-   },
-   {
-    "title": "Temperature",
-    "artist": "Sean Paul",
-    "uri": "spotify:track:0k2GOhqsrxDTAbFFSdNJjT",
-    "url": "https://open.spotify.com/track/0k2GOhqsrxDTAbFFSdNJjT",
-    "explicit": false
-   },
-   {
-    "title": "Get Busy",
-    "artist": "Sean Paul",
-    "uri": "spotify:track:6bK9BH9Ts8Gj5JFvnQkzak",
-    "url": "https://open.spotify.com/track/6bK9BH9Ts8Gj5JFvnQkzak",
-    "explicit": false
-   },
-   {
-    "title": "Welcome To Jamrock",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:4PvVHAkONOaS6v4wgONGYZ",
-    "url": "https://open.spotify.com/track/4PvVHAkONOaS6v4wgONGYZ",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:2G1KrCGeB8mNJIT3h7g8BO",
+  "url": "https://open.spotify.com/playlist/2G1KrCGeB8mNJIT3h7g8BO",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "berlin": {
   "name": "Beatwick: Berlin",
-  "uri": "spotify:playlist:4gjecMmRmCNNQm34rCLGMu",
-  "url": "https://open.spotify.com/playlist/4gjecMmRmCNNQm34rCLGMu",
-  "track_count": 4,
-  "tracks": [
-   {
-    "title": "Rej",
-    "artist": "Âme",
-    "uri": "spotify:track:5l3TZLe5uEk7vdXbHghZZW",
-    "url": "https://open.spotify.com/track/5l3TZLe5uEk7vdXbHghZZW",
-    "explicit": false
-   },
-   {
-    "title": "Sky and Sand",
-    "artist": "Paul Kalkbrenner",
-    "uri": "spotify:track:3ZSqMer9RLSglvi18bWXYV",
-    "url": "https://open.spotify.com/track/3ZSqMer9RLSglvi18bWXYV",
-    "explicit": false
-   },
-   {
-    "title": "Bad Kingdom",
-    "artist": "Moderat",
-    "uri": "spotify:track:7aZdQpV56UcKPbR4lDQJi4",
-    "url": "https://open.spotify.com/track/7aZdQpV56UcKPbR4lDQJi4",
-    "explicit": false
-   },
-   {
-    "title": "Du hast",
-    "artist": "Rammstein",
-    "uri": "spotify:track:6uEvFCaOqXyEidoO8BZbyh",
-    "url": "https://open.spotify.com/track/6uEvFCaOqXyEidoO8BZbyh",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:3ogBlbXOBt0wzkW8qXpUGI",
+  "url": "https://open.spotify.com/playlist/3ogBlbXOBt0wzkW8qXpUGI",
+  "track_count": 23,
+  "tracks": [],
   "missing": [
    "Hello Mom! - Modeselektor"
   ]
  },
  "paris": {
   "name": "Beatwick: Paris",
-  "uri": "spotify:playlist:6Isb0e88yRYMJnZmm5Zr3b",
-  "url": "https://open.spotify.com/playlist/6Isb0e88yRYMJnZmm5Zr3b",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Bande organisée",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2JNJSm3CjesTWLOcJm4Kiz",
-    "url": "https://open.spotify.com/track/2JNJSm3CjesTWLOcJm4Kiz",
-    "explicit": true
-   },
-   {
-    "title": "Au DD",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:5lCxlSBFyP5g4EhVypAoOu",
-    "url": "https://open.spotify.com/track/5lCxlSBFyP5g4EhVypAoOu",
-    "explicit": true
-   },
-   {
-    "title": "92i veyron",
-    "artist": "Booba",
-    "uri": "spotify:track:6Wpgf0xNuBIUpJF2uH7swL",
-    "url": "https://open.spotify.com/track/6Wpgf0xNuBIUpJF2uH7swL",
-    "explicit": false
-   },
-   {
-    "title": "Saiyan",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:63jpYDOn7xGEPzpUxViZu2",
-    "url": "https://open.spotify.com/track/63jpYDOn7xGEPzpUxViZu2",
-    "explicit": true
-   },
-   {
-    "title": "Petrouchka (feat. PLK)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:24l2mDpWEmA7gWgmFJ8CIG",
-    "url": "https://open.spotify.com/track/24l2mDpWEmA7gWgmFJ8CIG",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:3HehZngjqb4wi3mYW8kTfh",
+  "url": "https://open.spotify.com/playlist/3HehZngjqb4wi3mYW8kTfh",
+  "track_count": 23,
+  "tracks": [],
   "missing": []
  },
  "amsterdam": {
   "name": "Beatwick: Amsterdam",
-  "uri": "spotify:playlist:2Jt4XarUKzN505Y5fuLyKu",
-  "url": "https://open.spotify.com/playlist/2Jt4XarUKzN505Y5fuLyKu",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "In the Name of Love",
-    "artist": "Martin Garrix, Bebe Rexha",
-    "uri": "spotify:track:23L5CiUhw2jV1OIMwthR3S",
-    "url": "https://open.spotify.com/track/23L5CiUhw2jV1OIMwthR3S",
-    "explicit": false
-   },
-   {
-    "title": "Animals",
-    "artist": "Martin Garrix",
-    "uri": "spotify:track:0A9mHc7oYUoCECqByV8cQR",
-    "url": "https://open.spotify.com/track/0A9mHc7oYUoCECqByV8cQR",
-    "explicit": false
-   },
-   {
-    "title": "Take Over Control (feat. Eva Simons) [BYNX Remix]",
-    "artist": "AFROJACK, Eva Simons",
-    "uri": "spotify:track:5UYlMQpPxKnpagTO7z8Pnd",
-    "url": "https://open.spotify.com/track/5UYlMQpPxKnpagTO7z8Pnd",
-    "explicit": false
-   },
-   {
-    "title": "The Business",
-    "artist": "Tiësto",
-    "uri": "spotify:track:6f3Slt0GbA2bPZlz0aIFXN",
-    "url": "https://open.spotify.com/track/6f3Slt0GbA2bPZlz0aIFXN",
-    "explicit": false
-   },
-   {
-    "title": "This Is What It Feels Like",
-    "artist": "Armin van Buuren",
-    "uri": "spotify:track:5GjnIpUlLGEIYk052ISOw9",
-    "url": "https://open.spotify.com/track/5GjnIpUlLGEIYk052ISOw9",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:2lC9TqX59VFinmfwwbd7ML",
+  "url": "https://open.spotify.com/playlist/2lC9TqX59VFinmfwwbd7ML",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "barcelona": {
   "name": "Beatwick: Barcelona",
-  "uri": "spotify:playlist:60WCfLTBoUgaPO4yHieJa3",
-  "url": "https://open.spotify.com/playlist/60WCfLTBoUgaPO4yHieJa3",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "DESPECHÁ",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:5ildQOEKmJuWGl2vRkFdYc",
-    "url": "https://open.spotify.com/track/5ildQOEKmJuWGl2vRkFdYc",
-    "explicit": true
-   },
-   {
-    "title": "Fiebre - Prod. King DouDou",
-    "artist": "Bad Gyal",
-    "uri": "spotify:track:3e4EFbKbdLvnW42xGB6tIx",
-    "url": "https://open.spotify.com/track/3e4EFbKbdLvnW42xGB6tIx",
-    "explicit": false
-   },
-   {
-    "title": "Con Altura",
-    "artist": "ROSALÍA, J Balvin",
-    "uri": "spotify:track:2qG5sZ7Si6sdK74qLxedYM",
-    "url": "https://open.spotify.com/track/2qG5sZ7Si6sdK74qLxedYM",
-    "explicit": false
-   },
-   {
-    "title": "SAOKO",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2FYGZDfsAnNsrm1gVbyKnG",
-    "url": "https://open.spotify.com/track/2FYGZDfsAnNsrm1gVbyKnG",
-    "explicit": true
-   },
-   {
-    "title": "LA NOCHE DE ANOCHE",
-    "artist": "Bad Bunny",
-    "uri": "spotify:track:2XIc1pqjXV3Cr2BQUGNBck",
-    "url": "https://open.spotify.com/track/2XIc1pqjXV3Cr2BQUGNBck",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:1yzG4wDHss0uHAZpKo5Ywj",
+  "url": "https://open.spotify.com/playlist/1yzG4wDHss0uHAZpKo5Ywj",
+  "track_count": 19,
+  "tracks": [],
   "missing": []
  },
  "lisbon": {
   "name": "Beatwick: Lisbon",
-  "uri": "spotify:playlist:7APTgqaSWeTQVUhjFfql4U",
-  "url": "https://open.spotify.com/playlist/7APTgqaSWeTQVUhjFfql4U",
-  "track_count": 4,
-  "tracks": [
-   {
-    "title": "Sound Of Kuduro",
-    "artist": "Buraka Som Sistema",
-    "uri": "spotify:track:0pKhBNnBdZtPA8lqKZ4xpi",
-    "url": "https://open.spotify.com/track/0pKhBNnBdZtPA8lqKZ4xpi",
-    "explicit": false
-   },
-   {
-    "title": "Kalemba (Wegue - Wegue)",
-    "artist": "Buraka Som Sistema",
-    "uri": "spotify:track:2p66Aw0SuBqtCWch48xiuY",
-    "url": "https://open.spotify.com/track/2p66Aw0SuBqtCWch48xiuY",
-    "explicit": false
-   },
-   {
-    "title": "Hangover (BaBaBa)",
-    "artist": "Buraka Som Sistema",
-    "uri": "spotify:track:5ahjBQjEStlpiiMx114Odh",
-    "url": "https://open.spotify.com/track/5ahjBQjEStlpiiMx114Odh",
-    "explicit": false
-   },
-   {
-    "title": "Danza Kuduro",
-    "artist": "Don Omar",
-    "uri": "spotify:track:2a1o6ZejUi8U3wzzOtCOYw",
-    "url": "https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:6RP5BCiKdADNxp3i0WapYG",
+  "url": "https://open.spotify.com/playlist/6RP5BCiKdADNxp3i0WapYG",
+  "track_count": 21,
+  "tracks": [],
   "missing": [
    "Windeck - Preto Show feat. C4 Pedro"
   ]
  },
  "stockholm": {
   "name": "Beatwick: Stockholm",
-  "uri": "spotify:playlist:5ngmjiqZ5YsEQUFTcsbZts",
-  "url": "https://open.spotify.com/playlist/5ngmjiqZ5YsEQUFTcsbZts",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Dancing On My Own",
-    "artist": "Robyn",
-    "uri": "spotify:track:3Rc2ajBMInxeNGVkMPC92Y",
-    "url": "https://open.spotify.com/track/3Rc2ajBMInxeNGVkMPC92Y",
-    "explicit": false
-   },
-   {
-    "title": "Dancing Queen",
-    "artist": "ABBA",
-    "uri": "spotify:track:0GjEhVFGZW8afUYGChu3Rr",
-    "url": "https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr",
-    "explicit": false
-   },
-   {
-    "title": "...Baby One More Time",
-    "artist": "Britney Spears",
-    "uri": "spotify:track:3MjUtNVVq3C8Fn0MP3zhXa",
-    "url": "https://open.spotify.com/track/3MjUtNVVq3C8Fn0MP3zhXa",
-    "explicit": false
-   },
-   {
-    "title": "Call Me Maybe",
-    "artist": "Carly Rae Jepsen",
-    "uri": "spotify:track:3TGRqZ0a2l1LRblBkJoaDx",
-    "url": "https://open.spotify.com/track/3TGRqZ0a2l1LRblBkJoaDx",
-    "explicit": false
-   },
-   {
-    "title": "Blinding Lights",
-    "artist": "The Weeknd",
-    "uri": "spotify:track:0VjIjW4GlUZAMYd2vXMi3b",
-    "url": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:2hp6qrxUU75RrSk5D5zh4k",
+  "url": "https://open.spotify.com/playlist/2hp6qrxUU75RrSk5D5zh4k",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "glasgow": {
   "name": "Beatwick: Glasgow",
-  "uri": "spotify:playlist:4fHRdwfF5W96bOBsAlPi1P",
-  "url": "https://open.spotify.com/playlist/4fHRdwfF5W96bOBsAlPi1P",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Take Me Out",
-    "artist": "Franz Ferdinand",
-    "uri": "spotify:track:20I8RduZC2PWMWTDCZuuAN",
-    "url": "https://open.spotify.com/track/20I8RduZC2PWMWTDCZuuAN",
-    "explicit": false
-   },
-   {
-    "title": "Just Like Honey",
-    "artist": "The Jesus and Mary Chain",
-    "uri": "spotify:track:1CapNlKgeOWlBEE54CRamd",
-    "url": "https://open.spotify.com/track/1CapNlKgeOWlBEE54CRamd",
-    "explicit": false
-   },
-   {
-    "title": "Loaded",
-    "artist": "Primal Scream",
-    "uri": "spotify:track:7dSBZzVmyBaLDxT2v3EJHB",
-    "url": "https://open.spotify.com/track/7dSBZzVmyBaLDxT2v3EJHB",
-    "explicit": false
-   },
-   {
-    "title": "The Boy with the Arab Strap",
-    "artist": "Belle and Sebastian",
-    "uri": "spotify:track:2PV8oZJo3K3bXENO7FRRtp",
-    "url": "https://open.spotify.com/track/2PV8oZJo3K3bXENO7FRRtp",
-    "explicit": false
-   },
-   {
-    "title": "Mogwai Fear Satan",
-    "artist": "Mogwai",
-    "uri": "spotify:track:0fvUM4C6KiRGfXEcUeNZXZ",
-    "url": "https://open.spotify.com/track/0fvUM4C6KiRGfXEcUeNZXZ",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:67PmuKapVfUFPGgcBszrYd",
+  "url": "https://open.spotify.com/playlist/67PmuKapVfUFPGgcBszrYd",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "lagos": {
   "name": "Beatwick: Lagos",
-  "uri": "spotify:playlist:3c3ftqf4k5fEoLrwqTReD0",
-  "url": "https://open.spotify.com/playlist/3c3ftqf4k5fEoLrwqTReD0",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Calm Down",
-    "artist": "Rema",
-    "uri": "spotify:track:6hgoYQDUcPyCz7LcTUHKxa",
-    "url": "https://open.spotify.com/track/6hgoYQDUcPyCz7LcTUHKxa",
-    "explicit": false
-   },
-   {
-    "title": "Active",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:1qxKva4IzWde7m2jLpZvDU",
-    "url": "https://open.spotify.com/track/1qxKva4IzWde7m2jLpZvDU",
-    "explicit": true
-   },
-   {
-    "title": "Essence (feat. Tems)",
-    "artist": "Wizkid",
-    "uri": "spotify:track:5FG7Tl93LdH117jEKYl3Cm",
-    "url": "https://open.spotify.com/track/5FG7Tl93LdH117jEKYl3Cm",
-    "explicit": false
-   },
-   {
-    "title": "Ye",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:3FskQrDXcY24ur2fCvz35O",
-    "url": "https://open.spotify.com/track/3FskQrDXcY24ur2fCvz35O",
-    "explicit": true
-   },
-   {
-    "title": "Rush",
-    "artist": "Ayra Starr",
-    "uri": "spotify:track:1rrqJ9QkOBYJlsZgqqwxgB",
-    "url": "https://open.spotify.com/track/1rrqJ9QkOBYJlsZgqqwxgB",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:3ZKKnVbT4B5evz5XQBFITj",
+  "url": "https://open.spotify.com/playlist/3ZKKnVbT4B5evz5XQBFITj",
+  "track_count": 20,
+  "tracks": [],
   "missing": []
  },
  "johannesburg": {
   "name": "Beatwick: Johannesburg",
-  "uri": "spotify:playlist:5Bw7eMAyriG2379T3atAa1",
-  "url": "https://open.spotify.com/playlist/5Bw7eMAyriG2379T3atAa1",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Mnike (feat. DJ Maphorisa, Nandipha808, Ceeka RSA & Tyron Dee)",
-    "artist": "Tyler ICU, Tumelo_za",
-    "uri": "spotify:track:5tpft20jhQvRlG3O7XfwWy",
-    "url": "https://open.spotify.com/track/5tpft20jhQvRlG3O7XfwWy",
-    "explicit": false
-   },
-   {
-    "title": "Imithandazo (feat. Young Stunna, DJ Maphorisa, Sizwe Alakine & Umthakathi Kush)",
-    "artist": "Kabza De Small, Mthunzi",
-    "uri": "spotify:track:6Kijtp0DB6VwcoJIw7PJ9W",
-    "url": "https://open.spotify.com/track/6Kijtp0DB6VwcoJIw7PJ9W",
-    "explicit": false
-   },
-   {
-    "title": "Amantombazane (feat. Samthing Soweto & MFR Souls)",
-    "artist": "DJ Maphorisa, Kabza De Small",
-    "uri": "spotify:track:5HJTSkLCeOGYX31oDaE0jF",
-    "url": "https://open.spotify.com/track/5HJTSkLCeOGYX31oDaE0jF",
-    "explicit": false
-   },
-   {
-    "title": "uThando",
-    "artist": "Soa Mattrix, Soulful G",
-    "uri": "spotify:track:17gVmpZcORWwkNnDLoqgC2",
-    "url": "https://open.spotify.com/track/17gVmpZcORWwkNnDLoqgC2",
-    "explicit": false
-   },
-   {
-    "title": "eMcimbini (feat. Aymos, Samthing Soweto, Mas Musiq & Myztro) - Live",
-    "artist": "Kabza De Small, DJ Maphorisa",
-    "uri": "spotify:track:3MWSRZKgEo4retIW7RJA03",
-    "url": "https://open.spotify.com/track/3MWSRZKgEo4retIW7RJA03",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:0qipWlCNxN4AnUOJ7E4aaa",
+  "url": "https://open.spotify.com/playlist/0qipWlCNxN4AnUOJ7E4aaa",
+  "track_count": 22,
+  "tracks": [],
   "missing": []
  },
  "accra": {
   "name": "Beatwick: Accra",
-  "uri": "spotify:playlist:73JrfXWRq0uoHsZJqfQp5G",
-  "url": "https://open.spotify.com/playlist/73JrfXWRq0uoHsZJqfQp5G",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Kwaku the Traveller",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:7pXNFEzqeZB8rIbcFtYTop",
-    "url": "https://open.spotify.com/track/7pXNFEzqeZB8rIbcFtYTop",
-    "explicit": true
-   },
-   {
-    "title": "SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy)",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:09gysnJpfQ3ublBmJDfcEC",
-    "url": "https://open.spotify.com/track/09gysnJpfQ3ublBmJDfcEC",
-    "explicit": true
-   },
-   {
-    "title": "Adonai (Remix)",
-    "artist": "Sarkodie, Castro",
-    "uri": "spotify:track:4cEWZvR2wkb8aEB1vkTQDS",
-    "url": "https://open.spotify.com/track/4cEWZvR2wkb8aEB1vkTQDS",
-    "explicit": false
-   },
-   {
-    "title": "Terminator",
-    "artist": "King Promise",
-    "uri": "spotify:track:1oq33HJBs0rDmjjZ2rVFyG",
-    "url": "https://open.spotify.com/track/1oq33HJBs0rDmjjZ2rVFyG",
-    "explicit": false
-   },
-   {
-    "title": "Sugarcane",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:2PbZMipEYnCLXEYoPdRqHR",
-    "url": "https://open.spotify.com/track/2PbZMipEYnCLXEYoPdRqHR",
-    "explicit": true
-   }
-  ],
+  "uri": "spotify:playlist:29pcqnQ3ygpXGiyfksiBS1",
+  "url": "https://open.spotify.com/playlist/29pcqnQ3ygpXGiyfksiBS1",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "cairo": {
   "name": "Beatwick: Cairo",
-  "uri": "spotify:playlist:6rjqLAVczYLnLs52XKhTN6",
-  "url": "https://open.spotify.com/playlist/6rjqLAVczYLnLs52XKhTN6",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "البخت",
-    "artist": "Wegz",
-    "uri": "spotify:track:6nZSEnBdtgA1Zj2HZoUE8S",
-    "url": "https://open.spotify.com/track/6nZSEnBdtgA1Zj2HZoUE8S",
-    "explicit": false
-   },
-   {
-    "title": "Bent el Giran",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:6f2d46mNy5U8bt8LCBvPR8",
-    "url": "https://open.spotify.com/track/6f2d46mNy5U8bt8LCBvPR8",
-    "explicit": true
-   },
-   {
-    "title": "Ghaba",
-    "artist": "Marwan Pablo",
-    "uri": "spotify:track:7DRO3vmEuuLZCMQip3A0gR",
-    "url": "https://open.spotify.com/track/7DRO3vmEuuLZCMQip3A0gR",
-    "explicit": false
-   },
-   {
-    "title": "Keify Keda",
-    "artist": "Wegz, Disco Misr",
-    "uri": "spotify:track:3yWSjxKQMpa7hXcmVElZgX",
-    "url": "https://open.spotify.com/track/3yWSjxKQMpa7hXcmVElZgX",
-    "explicit": false
-   },
-   {
-    "title": "العبد لله دراعو ساندو",
-    "artist": "Ahmed Moza",
-    "uri": "spotify:track:5Rob4zhDKjerDScgu0RrkA",
-    "url": "https://open.spotify.com/track/5Rob4zhDKjerDScgu0RrkA",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:1fdBPmrYAOBoBn65wuetbJ",
+  "url": "https://open.spotify.com/playlist/1fdBPmrYAOBoBn65wuetbJ",
+  "track_count": 21,
+  "tracks": [],
   "missing": []
  },
  "tokyo": {
   "name": "Beatwick: Tokyo",
-  "uri": "spotify:playlist:4qJCKyifWmDIdJ84fqKW5Y",
-  "url": "https://open.spotify.com/playlist/4qJCKyifWmDIdJ84fqKW5Y",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Bling-Bang-Bang-Born",
-    "artist": "Creepy Nuts",
-    "uri": "spotify:track:0kdqcbwei4MDWFEX5f33yG",
-    "url": "https://open.spotify.com/track/0kdqcbwei4MDWFEX5f33yG",
-    "explicit": false
-   },
-   {
-    "title": "Plastic Love",
-    "artist": "Mariya Takeuchi",
-    "uri": "spotify:track:7rU6Iebxzlvqy5t857bKFq",
-    "url": "https://open.spotify.com/track/7rU6Iebxzlvqy5t857bKFq",
-    "explicit": false
-   },
-   {
-    "title": "Kaiju no Hanauta",
-    "artist": "Vaundy",
-    "uri": "spotify:track:3gQ19Wo6CbBpdHYmt2GVt0",
-    "url": "https://open.spotify.com/track/3gQ19Wo6CbBpdHYmt2GVt0",
-    "explicit": false
-   },
-   {
-    "title": "一途",
-    "artist": "King Gnu",
-    "uri": "spotify:track:7ncPjJBktLEOpstY5JOUMK",
-    "url": "https://open.spotify.com/track/7ncPjJBktLEOpstY5JOUMK",
-    "explicit": false
-   },
-   {
-    "title": "Mayonaka no Door~stay with me",
-    "artist": "Miki Matsubara",
-    "uri": "spotify:track:4J2oDU9oacz7lJ7H8A8P8v",
-    "url": "https://open.spotify.com/track/4J2oDU9oacz7lJ7H8A8P8v",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:4QK7P7NBGc1Hl1xS1nFrx5",
+  "url": "https://open.spotify.com/playlist/4QK7P7NBGc1Hl1xS1nFrx5",
+  "track_count": 25,
+  "tracks": [],
   "missing": []
  },
  "seoul": {
   "name": "Beatwick: Seoul",
-  "uri": "spotify:playlist:414xyPJOqxFinCtmiH96DE",
-  "url": "https://open.spotify.com/playlist/414xyPJOqxFinCtmiH96DE",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "APT.",
-    "artist": "ROSÉ, Bruno Mars",
-    "uri": "spotify:track:5vNRhkKd0yEAg8suGBpjeY",
-    "url": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY",
-    "explicit": false
-   },
-   {
-    "title": "Dynamite",
-    "artist": "BTS",
-    "uri": "spotify:track:5QDLhrAOJJdNAmCTJ8xMyW",
-    "url": "https://open.spotify.com/track/5QDLhrAOJJdNAmCTJ8xMyW",
-    "explicit": false
-   },
-   {
-    "title": "God’s Menu",
-    "artist": "Stray Kids",
-    "uri": "spotify:track:4XPXrcpyNr30Km6aPiflJy",
-    "url": "https://open.spotify.com/track/4XPXrcpyNr30Km6aPiflJy",
-    "explicit": false
-   },
-   {
-    "title": "TOMBOY",
-    "artist": "HYUKOH",
-    "uri": "spotify:track:6DA7kCWYMggJjqPM84V2Ng",
-    "url": "https://open.spotify.com/track/6DA7kCWYMggJjqPM84V2Ng",
-    "explicit": false
-   },
-   {
-    "title": "Cupid",
-    "artist": "FIFTY FIFTY",
-    "uri": "spotify:track:3VqSRkq3jRpsSEBngUcY6a",
-    "url": "https://open.spotify.com/track/3VqSRkq3jRpsSEBngUcY6a",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:2VjdhVIgLojNpuo2EVbMXI",
+  "url": "https://open.spotify.com/playlist/2VjdhVIgLojNpuo2EVbMXI",
+  "track_count": 26,
+  "tracks": [],
   "missing": []
  },
  "mumbai": {
   "name": "Beatwick: Mumbai",
-  "uri": "spotify:playlist:7GbcNS7nsmcC7tnJgtpyqz",
-  "url": "https://open.spotify.com/playlist/7GbcNS7nsmcC7tnJgtpyqz",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "Apna Time Aayega",
-    "artist": "DIVINE, Raftaar, Brodha V, Shashwat Sachdev",
-    "uri": "spotify:track:3NWErGd6zu3AH223uMULqE",
-    "url": "https://open.spotify.com/track/3NWErGd6zu3AH223uMULqE",
-    "explicit": false
-   },
-   {
-    "title": "Jai Ho",
-    "artist": "A.R. Rahman",
-    "uri": "spotify:track:4L9GjflAckf3yTNKRkgELa",
-    "url": "https://open.spotify.com/track/4L9GjflAckf3yTNKRkgELa",
-    "explicit": false
-   },
-   {
-    "title": "cold/mess",
-    "artist": "Prateek Kuhad",
-    "uri": "spotify:track:7uhINGViZPygI2AljxO8KN",
-    "url": "https://open.spotify.com/track/7uhINGViZPygI2AljxO8KN",
-    "explicit": false
-   },
-   {
-    "title": "Machi Bhasad",
-    "artist": "Bloodywood",
-    "uri": "spotify:track:0US3VMaFvQLAUQwS7DYRFI",
-    "url": "https://open.spotify.com/track/0US3VMaFvQLAUQwS7DYRFI",
-    "explicit": false
-   },
-   {
-    "title": "Sher Aaya Sher",
-    "artist": "DIVINE, Shashwat Sachdev, Vishal Mishra",
-    "uri": "spotify:track:0z5xD47F2cU5wh815DNimb",
-    "url": "https://open.spotify.com/track/0z5xD47F2cU5wh815DNimb",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:2upAMR68Chj2vPgIftqqin",
+  "url": "https://open.spotify.com/playlist/2upAMR68Chj2vPgIftqqin",
+  "track_count": 23,
+  "tracks": [],
   "missing": []
  },
  "jakarta": {
   "name": "Beatwick: Jakarta",
-  "uri": "spotify:playlist:6O6HTMOvdC0PPXPeDS1jmO",
-  "url": "https://open.spotify.com/playlist/6O6HTMOvdC0PPXPeDS1jmO",
-  "track_count": 4,
-  "tracks": [
-   {
-    "title": "Sayang Na Sayang",
-    "artist": "Aegis",
-    "uri": "spotify:track:5FwwkCLrqDydT44SAcrsv7",
-    "url": "https://open.spotify.com/track/5FwwkCLrqDydT44SAcrsv7",
-    "explicit": false
-   },
-   {
-    "title": "Rungkad",
-    "artist": "Happy Asmara",
-    "uri": "spotify:track:5e4Hs9SdvTUqxOd0Jw7Y4V",
-    "url": "https://open.spotify.com/track/5e4Hs9SdvTUqxOd0Jw7Y4V",
-    "explicit": false
-   },
-   {
-    "title": "Kartonyono Medot Janji",
-    "artist": "Denny Caknan",
-    "uri": "spotify:track:0PIEEPvUNCukkAzEEsallb",
-    "url": "https://open.spotify.com/track/0PIEEPvUNCukkAzEEsallb",
-    "explicit": false
-   },
-   {
-    "title": "Jaran Goyang",
-    "artist": "Nella Kharisma",
-    "uri": "spotify:track:1xQVC7huVrHZzPOIEdhAB4",
-    "url": "https://open.spotify.com/track/1xQVC7huVrHZzPOIEdhAB4",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:1MjCMnntLkTBYPr06rv3nk",
+  "url": "https://open.spotify.com/playlist/1MjCMnntLkTBYPr06rv3nk",
+  "track_count": 23,
+  "tracks": [],
   "missing": [
    "Pamer Bojo - Didi Kempot"
   ]
  },
  "manila": {
   "name": "Beatwick: Manila",
-  "uri": "spotify:playlist:3vWs8ptyoZMbSH1IQsgqlL",
-  "url": "https://open.spotify.com/playlist/3vWs8ptyoZMbSH1IQsgqlL",
-  "track_count": 5,
-  "tracks": [
-   {
-    "title": "GENTO",
-    "artist": "SB19",
-    "uri": "spotify:track:1o6uF8VmXna99ysHTcQRI2",
-    "url": "https://open.spotify.com/track/1o6uF8VmXna99ysHTcQRI2",
-    "explicit": false
-   },
-   {
-    "title": "Pantropiko",
-    "artist": "BINI",
-    "uri": "spotify:track:6Csrqur3IfnVp0EtHskjMw",
-    "url": "https://open.spotify.com/track/6Csrqur3IfnVp0EtHskjMw",
-    "explicit": false
-   },
-   {
-    "title": "Maybe The Night",
-    "artist": "Ben&Ben",
-    "uri": "spotify:track:1yDiru08Q6omDOGkZMPnei",
-    "url": "https://open.spotify.com/track/1yDiru08Q6omDOGkZMPnei",
-    "explicit": false
-   },
-   {
-    "title": "Mundo",
-    "artist": "IV OF SPADES",
-    "uri": "spotify:track:61vyXXtY7OSYFRtSzv5ehw",
-    "url": "https://open.spotify.com/track/61vyXXtY7OSYFRtSzv5ehw",
-    "explicit": false
-   },
-   {
-    "title": "Ang Huling El Bimbo",
-    "artist": "Eraserheads",
-    "uri": "spotify:track:135ggzbjOogZ75IQ0LQi8r",
-    "url": "https://open.spotify.com/track/135ggzbjOogZ75IQ0LQi8r",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:19pNLBCW8LNumChVbqM0Df",
+  "url": "https://open.spotify.com/playlist/19pNLBCW8LNumChVbqM0Df",
+  "track_count": 24,
+  "tracks": [],
   "missing": []
  },
  "melbourne": {
   "name": "Beatwick: Melbourne",
-  "uri": "spotify:playlist:5HnssyZBqwTcfvGCcRe8sM",
-  "url": "https://open.spotify.com/playlist/5HnssyZBqwTcfvGCcRe8sM",
-  "track_count": 3,
-  "tracks": [
-   {
-    "title": "Guided By Angels",
-    "artist": "EXPLICIT",
-    "uri": "spotify:track:4M7o0cOEvDFiJ7I8PXJ3bA",
-    "url": "https://open.spotify.com/track/4M7o0cOEvDFiJ7I8PXJ3bA",
-    "explicit": true
-   },
-   {
-    "title": "Rattlesnake",
-    "artist": "Glass Beams",
-    "uri": "spotify:track:6zTm22XW67xwncqhtF3TmF",
-    "url": "https://open.spotify.com/track/6zTm22XW67xwncqhtF3TmF",
-    "explicit": false
-   },
-   {
-    "title": "Avant Gardener",
-    "artist": "Courtney Barnett",
-    "uri": "spotify:track:39JZ7vKB53VfcsQ5mQIcdj",
-    "url": "https://open.spotify.com/track/39JZ7vKB53VfcsQ5mQIcdj",
-    "explicit": false
-   }
-  ],
+  "uri": "spotify:playlist:69QNfqRGlOjkhplsIePw9Z",
+  "url": "https://open.spotify.com/playlist/69QNfqRGlOjkhplsIePw9Z",
+  "track_count": 24,
+  "tracks": [],
   "missing": [
    "Do I Have To Talk You Into It - The Teskey Brothers",
    "Hurt Me - The Teskey Brothers"
