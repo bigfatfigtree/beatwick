@@ -1,0 +1,105 @@
+/* Beatwick V3 — magazine treatment for articles/*.html
+   Loaded after assets/v2.css. Restyle only: no factual content changes. */
+
+:root{
+  --mag-maxw: 1160px;
+}
+
+/* ---------- hero ---------- */
+.article-hero{padding-bottom:0}
+.article-hero .wrap{max-width:var(--mag-maxw)}
+
+/* big hero image between headline and dek */
+.mag-hero{margin:34px 0 8px}
+.mag-hero img{
+  display:block;width:100%;aspect-ratio:16/8.5;object-fit:cover;
+  border-radius:14px;border:1px solid var(--line);
+  background:#0a0a0d;
+}
+.mag-hero figcaption{
+  margin-top:10px;font-size:11.5px;letter-spacing:.06em;
+  color:var(--dim);text-transform:uppercase;
+}
+.mag-hero figcaption a{color:var(--dim);text-decoration:underline;text-underline-offset:2px}
+
+/* ---------- display typography ---------- */
+.article-hero h1{
+  font-size:clamp(46px,7.4vw,96px);
+  letter-spacing:-.01em;
+  text-wrap:balance;
+}
+.article-dek{
+  font-size:clamp(19px,2.2vw,23px);
+  line-height:1.55;
+  max-width:760px;
+  color:var(--text);
+  border-left:3px solid var(--green);
+  padding-left:20px;
+  margin-top:26px;
+}
+.article-meta{margin:26px 0 40px}
+
+/* ---------- body: generous whitespace, richer type ---------- */
+.article-body{max-width:700px;padding:56px 24px 84px}
+.article-body p{font-size:19px;line-height:1.85;margin-bottom:32px}
+
+/* drop cap on the lede */
+.article-body p.lede{font-size:23px;line-height:1.65}
+.article-body p.lede::first-letter{
+  font-size:92px;line-height:.78;padding:10px 14px 0 0;
+}
+
+/* pull quotes: magazine treatment */
+.article-body blockquote{
+  border:0;
+  margin:56px 0;
+  padding:8px 0 8px 34px;
+  position:relative;
+  font-family:var(--font-d);
+  font-style:normal;
+  font-size:clamp(26px,3.4vw,36px);
+  line-height:1.25;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  color:var(--text);
+}
+.article-body blockquote::before{
+  content:"";
+  position:absolute;left:0;top:6px;bottom:6px;width:5px;
+  background:linear-gradient(var(--green),#3ddc84);
+  border-radius:3px;
+}
+.article-body blockquote::after{
+  content:"”";
+  position:absolute;right:-6px;top:-34px;
+  font-family:var(--font-d);font-size:110px;line-height:1;
+  color:var(--green);opacity:.28;pointer-events:none;
+}
+
+/* section headers inside the story */
+.article-body h2{
+  font-size:clamp(30px,3.6vw,40px);
+  margin:64px 0 22px;
+  padding-top:26px;
+  border-top:1px solid var(--line);
+}
+.article-body h2:first-of-type{border-top:0;padding-top:0}
+
+/* the take: sign-off card */
+.article-body hr{margin:56px 0 32px}
+.article-body hr + p{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:26px 28px;
+  font-size:18px;
+}
+.article-body hr + p strong{color:var(--green)}
+
+/* ---------- small screens ---------- */
+@media (max-width:640px){
+  .mag-hero img{aspect-ratio:16/10;border-radius:10px}
+  .article-body p{font-size:17.5px}
+  .article-body p.lede{font-size:20px}
+  .article-body blockquote{font-size:24px;margin:44px 0}
+}

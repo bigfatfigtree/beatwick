@@ -5,7 +5,7 @@ Every city has a sound. Beatwick is an international music-discovery platform or
 - Homepage: https://beatwick.com/
 - All 30 cities by region: https://beatwick.com/cities/
 - All 150 artist spotlights: https://beatwick.com/artists/
-- The Beatwick 30 (global chart, updated weekly): https://beatwick.com/charts/
+- The Founder's Global 30 (the Beatwick founder's personal curation of 30 tracks, in his exact order — editorial, not official chart data; fan votes feed future movement): https://beatwick.com/charts/
 - World map: https://beatwick.com/map.html
 - Archive (Oct 2025–present): https://beatwick.com/archive.html
 - RSS: https://beatwick.com/feed.xml

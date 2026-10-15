@@ -208,3 +208,64 @@ Hero images for the rebuilt city pages. All downloaded from Wikimedia Commons an
 | melbourne.html | `assets/cities/melbourne-hero.jpg` | [File:Train long-exposure at Flinders Street station (559878147).jpg](https://commons.wikimedia.org/wiki/File:Train_long-exposure_at_Flinders_Street_station_(559878147).jpg) | Tom Reynolds | [CC BY](https://creativecommons.org/licenses/by/4.0) (attribution) |
 
 All images are landscape, ≥1600px wide, and used as the `.city-bg` hero background on their respective city pages. Mumbai hero carries a small corner watermark from the original uploader (visible under the hero gradient).
+
+---
+
+# Image credits — article heroes (Beatwick V3)
+
+Hero images for the 16 articles in `articles/`, downloaded from Wikimedia Commons
+and hosted locally (never hotlinked, never AI). Licenses verified on each file's
+Commons page on 2026-10-14, except where noted.
+
+## New downloads (assets/articles/)
+
+### berlin-techno-hero.jpg (articles/berlin-techno.html)
+- Commons file: Berghain in October 2014.jpg
+- File page: https://commons.wikimedia.org/wiki/File:Berghain_in_October_2014.jpg
+- Author: Yannick (Wikimedia user Yannickoo1)
+- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)
+- Dimensions: 3264x2448
+- Content: the Berghain building exterior, Berlin, October 2014 (daytime).
+
+### brixton-academy-hero.jpg (articles/london-brixton-academy.html)
+- Commons file: Brixton Academy - geograph.org.uk - 7163206.jpg
+- File page: https://commons.wikimedia.org/wiki/File:Brixton_Academy_-_geograph.org.uk_-_7163206.jpg
+- Author: N Chadwick (via Geograph Britain and Ireland, photo 7163206)
+- License: CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)
+- Dimensions: 1024x685
+
+### second-line-hero.jpg (articles/new-orleans-second-line.html)
+- Commons file: N Claiborne Avenue New Orleans - All Saints Day Second Line Parade 2009 43.jpg
+- File page: https://commons.wikimedia.org/wiki/File:N_Claiborne_Avenue_New_Orleans_-_All_Saints_Day_Second_Line_Parade_2009_43.jpg
+- Author: Infrogmation of New Orleans
+- License: free license self-published by the copyright holder on Commons
+  (the license template version did not render in the verification fetch on
+  2026-10-14 — confirm the exact version on the file page before any reuse
+  outside this site).
+- Dimensions: 2112x2816 (portrait; displayed cropped via CSS object-fit)
+- Content: grand marshal with decorated parasol leading the All Saints Day
+  second line parade on N. Claiborne Avenue, New Orleans, 1 Nov 2009, with the
+  Treme brass band. Real photo, visually verified.
+
+## Reused city heroes (assets/cities/)
+
+The following articles reuse the already-licensed, already-attributed city hero
+images from `assets/cities/` (full attribution in the city-hero sections above).
+Filenames are relative to the site root.
+
+- articles/buenos-aires-rock-nacional.html → assets/cities/buenos-aires-hero.jpg (Luis Santos, CC BY-SA 2.0)
+- articles/cairo-decibel-city.html → assets/cities/cairo-hero.jpg (David Broad, CC BY 3.0)
+- articles/johannesburg-amapiano-log-drum.html → assets/cities/johannesburg-hero.jpg (Khaanya96, CC BY-SA 4.0)
+- articles/kingston-sound-system.html → assets/cities/kingston-hero.jpg (nickolette, CC BY-SA 2.5)
+- articles/lagos-afrobeats.html → assets/cities/lagos-hero.jpg (kopee15, public domain)
+- articles/london-grime-desk.html → assets/cities/london-hero.jpg (Diliff, CC BY-SA 3.0)
+- articles/melbourne-band-rooms.html → assets/cities/melbourne-hero.jpg (Tom Reynolds, CC BY 4.0)
+- articles/mexico-city-live.html → assets/cities/mexico-city-hero.jpg (José Luiz, CC BY-SA 4.0)
+- articles/nashville-beyond-country.html → assets/cities/nashville-hero.jpg (Daniel Schwen, CC BY-SA 4.0)
+- articles/sao-paulo-funk.html → assets/cities/sao-paulo-hero.jpg (Spicypepper999, CC0)
+- articles/seoul-trainee-system.html → assets/cities/seoul-hero.jpg (User Spike, CC BY-SA 4.0)
+- articles/stockholm-song-factory.html → assets/cities/stockholm-hero.jpg (Julian Herzog, CC BY 4.0)
+- articles/tokyo-city-pop.html → assets/cities/tokyo-hero.jpg (RuinDig / Yuki Uchida, CC BY 4.0)
+
+Each article page carries a figcaption credit line; og:image / twitter:image /
+JSON-LD `image` point at the hero file.

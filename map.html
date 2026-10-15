@@ -55,11 +55,21 @@
       <img src="assets/logo.png" alt="Beatwick">
       <p>Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with playlists that refresh and writing with teeth.</p>
       <p style="margin-top:12px"><a href="https://www.instagram.com/thebeatwick">Instagram</a> · <a href="https://www.facebook.com/thebeatwick">Facebook</a></p>
+    
+      <form class="in-rotation__form footer-signup" novalidate>
+        <p class="footer-signup__title">In rotation — the weekly email</p>
+        <div class="in-rotation__row">
+          <input class="in-rotation__input" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
+          <button class="in-rotation__button" type="submit">Join</button>
+        </div>
+        <p class="in-rotation__status" data-signup-status role="status" aria-live="polite" hidden></p>
+      </form>
+      <script src="/assets/signup.js"></script>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
       <a href="cities/index.html">All 30 cities</a>
-      <a href="charts/index.html">The Beatwick 30</a>
+      <a href="charts/index.html">The Founder's Global 30</a>
       <a href="map.html">World map</a>
       <a href="artists/index.html">Artists</a>
       <a href="archive.html">Dispatches</a>
@@ -90,11 +100,32 @@
 <script src="assets/map-cities.js"></script>
 <script>
 (function(){
+  var mapEl = document.getElementById('map');
   var map = L.map('map').setView([28, 8], 2);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  var tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    maxZoom:18, minZoom:2, worldCopyJump:true
+    maxZoom:18, minZoom:2, worldCopyJump:true, detectRetina:true
   }).addTo(map);
+  /* graceful fallback if CartoDB tiles fail: show after several consecutive
+     errors so a single bad tile doesn't kill the map */
+  var errCount = 0, fallbackShown = false;
+  tiles.on('tileerror', function(){
+    if (fallbackShown) return;
+    errCount++;
+    if (errCount >= 6) {
+      fallbackShown = true;
+      var msg = document.createElement('div');
+      msg.className = 'map-fallback';
+      msg.setAttribute('role', 'alert');
+      msg.innerHTML = '<p>Map tiles aren\'t loading — browse all 30 cities instead.</p>' +
+        '<a class="fallback-link" href="cities/index.html">Browse all 30 cities</a>' +
+        '<button class="fallback-dismiss" type="button">Dismiss</button>';
+      mapEl.appendChild(msg);
+      msg.querySelector('.fallback-dismiss').addEventListener('click', function(){
+        mapEl.removeChild(msg);
+      });
+    }
+  });
   var icon = L.divIcon({className:'city-marker', html:'<span></span>', iconSize:[18,18], iconAnchor:[9,9], popupAnchor:[0,-10]});
   BEATWICK_CITIES.forEach(function(c){
     L.marker([c.lat, c.lng], {icon:icon, title:c.name})

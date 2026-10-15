@@ -1,0 +1,33 @@
+<!-- Beatwick "IN ROTATION" signup section. The V3 coordinator injects this
+     into index.html (and other pages) — wire with assets/signup.js. -->
+<section class="in-rotation" id="in-rotation" aria-labelledby="in-rotation-heading">
+  <div class="in-rotation__inner">
+    <p class="in-rotation__kicker">IN ROTATION — the Beatwick weekly email</p>
+    <h2 class="in-rotation__headline" id="in-rotation-heading">
+      The week's loudest tracks, charts, and dispatches. Every Friday. No filler.
+    </h2>
+    <p class="in-rotation__prop">
+      One email, every Friday: what 30 cities were actually playing, who's climbing the charts, and the scene stories worth your ears. Free. Unsubscribe whenever.
+    </p>
+    <form class="in-rotation__form" id="in-rotation-form" novalidate>
+      <label class="in-rotation__label" for="in-rotation-email">Email address</label>
+      <div class="in-rotation__row">
+        <input
+          class="in-rotation__input"
+          id="in-rotation-email"
+          name="email"
+          type="email"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required
+          aria-describedby="in-rotation-status"
+        />
+        <button class="in-rotation__button" type="submit">Get in rotation</button>
+      </div>
+      <p class="in-rotation__status" id="in-rotation-status" data-signup-status role="status" aria-live="polite" hidden></p>
+      <p class="in-rotation__fineprint">No spam, no fake subscriber counts, no selling your address. One email a week — that's the whole deal.</p>
+    </form>
+  </div>
+</section>
+<script src="/assets/signup.js"></script>

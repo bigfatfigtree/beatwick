@@ -32,7 +32,9 @@ a{color:inherit;text-decoration:none}
   border-bottom:1px solid var(--line)}
 .header-inner{max-width:var(--max);margin:0 auto;padding:10px 24px;display:flex;
   align-items:center;justify-content:space-between;gap:20px}
-.brand img{height:58px;width:auto} /* bigger standalone logo, no wordmark text */
+/* logo floats clean: transparent asset, no background/box/shadow anywhere */
+.brand{display:inline-flex;align-items:center;background:none;border-radius:0;box-shadow:none}
+.brand img{height:104px;width:auto;background:none;border-radius:0;box-shadow:none;border:none;display:block}
 .main-nav{display:flex;gap:26px;font-size:12px;font-weight:700;letter-spacing:.18em}
 .main-nav a{color:var(--muted);padding:6px 0;position:relative;transition:color .2s}
 .main-nav a:hover,.main-nav a.active{color:var(--text)}
@@ -72,6 +74,15 @@ a{color:inherit;text-decoration:none}
 section.block{padding:84px 0}
 .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
   margin-bottom:34px;flex-wrap:wrap}
+/* vertical rhythm: a section head that is NOT the first thing in its container
+   (e.g. it follows a card grid) gets generous air above it — headings must
+   never collide with content above them */
+.section-head:not(:first-child){margin-top:clamp(52px,7vw,80px)}
+/* card grids always carry bottom space so nothing below them can touch */
+.spot-grid,.venue-grid,.city-grid,.chart-list,.faq,.playlist-embed,.video-embed,.tour-list{
+  margin-bottom:clamp(40px,5vw,56px)}
+.spot-grid:last-child,.venue-grid:last-child,.city-grid:last-child,.chart-list:last-child,
+.faq:last-child,.playlist-embed:last-child,.video-embed:last-child,.tour-list:last-child{margin-bottom:0}
 .section-kicker{font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--green);
   text-transform:uppercase;display:block;margin-bottom:10px}
 .section-title{font-family:var(--font-d);font-size:clamp(34px,4.6vw,58px);text-transform:uppercase;
@@ -198,7 +209,7 @@ a.section-link:hover{color:var(--green)}
 .site-footer{border-top:1px solid var(--line);margin-top:40px;background:#060608}
 .footer-grid{max-width:var(--max);margin:0 auto;padding:64px 24px 40px;display:grid;
   grid-template-columns:1.3fr 1fr 1.6fr;gap:44px}
-.footer-brand img{height:52px;margin-bottom:16px}
+.footer-brand img{height:72px;width:auto;margin-bottom:16px;background:none;border-radius:0;box-shadow:none;border:none}
 .footer-brand p{color:var(--muted);font-size:14.5px;max-width:340px}
 .footer-col h4{font-size:11px;letter-spacing:.26em;color:var(--dim);margin-bottom:16px;text-transform:uppercase}
 .footer-col a{display:block;color:var(--muted);font-size:14px;padding:4px 0}
@@ -231,7 +242,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   .footer-grid{grid-template-columns:1fr 1fr}
   .footer-cities{grid-template-columns:repeat(2,1fr)}
   .main-nav{gap:16px;font-size:11px}
-  .brand img{height:46px}
+  .brand img{height:72px}
 }
 @media(max-width:640px){
   .main-nav{display:none} /* keep header clean on small screens; nav lives in footer */
@@ -279,3 +290,167 @@ section.hero{padding:72px 0}
 .cta-row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
 .footer-region{font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:16px 0 4px}
 .footer-region:first-of-type{margin-top:0}
+
+/* ================= V3 — visual upgrades ================= */
+
+/* richer card hovers */
+.spot-card{position:relative}
+.spot-card:hover{transform:translateY(-6px);border-color:rgba(0,230,150,.55);
+  box-shadow:0 20px 48px rgba(0,0,0,.55),0 0 0 1px rgba(0,230,150,.18)}
+.spot-card:hover .spot-hero .spot-type{transform:scale(1.05)}
+.spot-hero .spot-type{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.spot-link{display:inline-flex;align-items:center;gap:8px;transition:gap .22s ease,color .2s}
+.spot-card:hover .spot-link{gap:14px;color:#fff}
+.city-chip:hover{transform:translateY(-4px);border-color:rgba(0,230,150,.55);
+  box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.venue{transition:transform .18s,border-color .2s,box-shadow .25s}
+.venue:hover{transform:translateY(-4px);border-color:rgba(46,140,255,.5);
+  box-shadow:0 14px 34px rgba(0,0,0,.45)}
+
+/* image treatments: subtle zoom + grade on hover */
+.spot-hero img,.card-zoom img{transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.spot-card:hover .spot-hero img{transform:scale(1.06);filter:saturate(1.15) contrast(1.04)}
+.img-frame{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.img-frame img{width:100%;height:auto;transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.img-frame:hover img{transform:scale(1.04);filter:saturate(1.12)}
+
+/* track row hover accent */
+.track{position:relative}
+.track:hover{background:var(--panel2)}
+.track:hover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad)}
+
+/* section-link underline flourish */
+a.section-link{position:relative;padding-bottom:4px}
+a.section-link::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+  background:var(--grad);border-radius:2px;transition:width .25s ease}
+a.section-link:hover::after{width:100%}
+
+/* responsive 16:9 video embed */
+.video-embed{position:relative;width:100%;height:0;padding-bottom:56.25%;
+  overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#000}
+.video-embed iframe,.video-embed video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-embed video{object-fit:cover}
+
+/* pull quote */
+.pullquote{font-family:var(--font-d);font-size:clamp(26px,3.6vw,44px);line-height:1.08;
+  text-transform:uppercase;letter-spacing:.01em;color:var(--text);
+  border-left:4px solid;border-image:linear-gradient(180deg,#2e8cff,#00e696) 1;
+  padding:6px 0 6px 28px;margin:52px 0}
+.pullquote cite{display:block;font-family:var(--font-b);font-style:normal;font-weight:700;
+  font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+
+/* drop cap */
+.dropcap::first-letter{font-family:var(--font-d);font-size:3.4em;float:left;line-height:.82;
+  padding:6px 12px 0 0;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* concert / tour sections (shared, driven by assets/tour.js) */
+.tour-list{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.tour-item{display:flex;align-items:center;gap:18px;padding:16px 22px;border-bottom:1px solid var(--line);
+  transition:background .15s;flex-wrap:wrap}
+.tour-item:last-child{border-bottom:none}
+.tour-item:hover{background:var(--panel2)}
+.tour-date{font-family:var(--font-d);font-size:15px;letter-spacing:.06em;color:var(--green);
+  min-width:120px;text-transform:uppercase}
+.tour-act{font-weight:800;font-size:16px;flex:1;min-width:140px}
+.tour-venue{color:var(--muted);font-size:14px}
+.tour-tix{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);border:1px solid rgba(0,230,150,.4);border-radius:999px;padding:8px 16px;
+  transition:background .2s,color .2s}
+.tour-tix:hover{background:var(--grad);color:#00120b;border-color:transparent}
+.just-played{margin-top:40px}
+.just-played-heading{font-size:12px;font-weight:800;letter-spacing:.28em;color:var(--dim);
+  text-transform:uppercase;margin-bottom:14px}
+.just-played .tour-item{opacity:.72}
+.just-played .tour-date{color:var(--dim)}
+.tour-empty{display:none;border:1px dashed var(--line);border-radius:var(--radius);
+  padding:28px;text-align:center;color:var(--muted);font-size:15px}
+.tour-empty.is-visible{display:block}
+
+/* map tile-failure fallback overlay */
+.map-section #map,.map-full #map{position:relative}
+.map-fallback{position:absolute;inset:0;z-index:500;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;background:rgba(8,8,11,.94);
+  text-align:center;padding:32px;border-radius:inherit}
+.map-fallback p{color:var(--muted);font-size:16px;max-width:420px}
+.map-fallback a.fallback-link{font-weight:800;font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;color:#00120b;background:var(--grad);border-radius:999px;padding:12px 26px}
+.map-fallback .fallback-dismiss{background:none;border:1px solid var(--line);border-radius:999px;
+  color:var(--dim);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  padding:8px 18px;cursor:pointer}
+.map-fallback .fallback-dismiss:hover{color:var(--text);border-color:var(--green)}
+
+/* ---------- ON TOUR (city pages, V3) ---------- */
+.tour-list{display:flex;flex-direction:column;gap:12px}
+.tour-item{display:flex;align-items:center;gap:18px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;flex-wrap:wrap}
+.tour-date{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--green);min-width:110px;text-transform:uppercase}
+.tour-main{flex:1;min-width:180px}
+.tour-artist{display:block;font-family:var(--font-d);font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+.tour-venue{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.tour-tickets{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid var(--green);border-radius:8px;padding:10px 16px;white-space:nowrap}
+.tour-tickets:hover{background:var(--green);color:#0d0d0f}
+.tour-empty{color:var(--muted);font-size:15px;padding:12px 0}
+.tour-note{margin-top:18px;font-size:12.5px;color:var(--dim)}
+.just-played-title{font-family:var(--font-d);font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin:34px 0 14px;color:var(--muted)}
+.tour-played .tour-item{opacity:.72}
+.tour-played .tour-tickets{display:none}
+
+/* ---------- DEFINED THIS CITY (legends list, V3) ---------- */
+.legends-list{list-style:none;display:flex;flex-direction:column;gap:20px;margin:0;padding:0}
+.legends-list li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px}
+.legends-list .legend-name{font-family:var(--font-d);font-size:24px;text-transform:uppercase;letter-spacing:.02em}
+.legends-list .legend-name a{color:var(--text)}
+.legends-list .legend-name a:hover{color:var(--green)}
+.legends-list p{color:var(--muted);font-size:15px;margin-top:8px;line-height:1.6}
+
+/* ---------- THE ROOMS venue links (V3) ---------- */
+.venue-links{margin-top:14px;display:flex;gap:16px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.venue-links a{color:var(--green)}
+.venue-links a:hover{text-decoration:underline}
+
+/* ---------- SPOTLIGHT LISTEN box (V3) ---------- */
+.listen-box{max-width:720px;margin:0 auto;padding:44px 24px 0}
+.listen-inner{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:28px;display:flex;flex-direction:column;gap:18px}
+.listen-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.listen-kicker{font-family:var(--font-d);font-size:22px;letter-spacing:.06em;text-transform:uppercase}
+.listen-kicker .acid{color:var(--green)}
+.listen-spotify{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:10px 20px;transition:border-color .2s,color .2s}
+.listen-spotify:hover{border-color:var(--green);color:var(--green)}
+.listen-video{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.listen-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.listen-caption{font-size:13.5px;color:var(--dim);letter-spacing:.02em}
+.listen-caption strong{color:var(--muted)}
+
+/* ---------- IN ROTATION email signup (V3) ---------- */
+.in-rotation{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:radial-gradient(1200px 400px at 20% 0%,rgba(46,140,255,.10),transparent 60%),
+             radial-gradient(900px 380px at 85% 100%,rgba(0,230,150,.08),transparent 60%),
+             var(--panel)}
+.in-rotation__inner{max-width:var(--max);margin:0 auto;padding:clamp(48px,6vw,84px) 24px;text-align:center}
+.in-rotation__kicker{font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--green);text-transform:uppercase;margin-bottom:14px}
+.in-rotation__headline{font-family:var(--font-d);font-size:clamp(30px,4.4vw,54px);line-height:1.05;
+  text-transform:uppercase;letter-spacing:.01em;max-width:800px;margin:0 auto 14px}
+.in-rotation__prop{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto 28px}
+.in-rotation__form{max-width:560px;margin:0 auto}
+.in-rotation__label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.in-rotation__row{display:flex;gap:10px}
+.in-rotation__input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);border-radius:999px;
+  padding:14px 22px;color:var(--text);font-size:15px;font-family:var(--font-b)}
+.in-rotation__input:focus{outline:none;border-color:var(--green)}
+.in-rotation__input::placeholder{color:var(--dim)}
+.in-rotation__button{background:var(--grad);color:#04110b;border:none;border-radius:999px;padding:14px 28px;
+  font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:transform .15s}
+.in-rotation__button:hover{transform:translateY(-1px)}
+.in-rotation__button:disabled{opacity:.6;cursor:wait;transform:none}
+.in-rotation__status{margin-top:14px;font-size:14.5px;font-weight:600}
+.in-rotation__status[data-tone="ok"]{color:var(--green)}
+.in-rotation__status[data-tone="error"]{color:var(--live)}
+.in-rotation__fineprint{margin-top:16px;font-size:12.5px;color:var(--dim)}
+@media(max-width:560px){.in-rotation__row{flex-direction:column}.in-rotation__button{width:100%}}
+
+/* ---------- footer IN ROTATION signup (compact, V3) ---------- */
+.footer-signup{margin-top:18px;max-width:340px}
+.footer-signup__title{font-size:11px;font-weight:700;letter-spacing:.24em;color:var(--green);text-transform:uppercase;margin-bottom:10px}
+.footer-signup .in-rotation__row{gap:8px}
+.footer-signup .in-rotation__input{padding:10px 16px;font-size:13.5px}
+.footer-signup .in-rotation__button{padding:10px 18px;font-size:12px}
+.footer-signup .in-rotation__status{font-size:13px;text-align:left}
