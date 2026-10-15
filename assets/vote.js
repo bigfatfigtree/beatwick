@@ -1,12 +1,15 @@
 /* Beatwick fan voting — binds every .vote-btn to the Netlify Functions backend.
    Local dedupe via localStorage. Never invents counts: if the backend is
-   unreachable (e.g. local preview) it says so and shows no numbers. */
+   unreachable (e.g. local preview) it says so and shows no numbers.
+   Kill-the-empty-room rule: counts stay hidden until a track has real
+   traction (VOTE_THRESHOLD), so the chart never shows sad zeroes. */
 (function () {
   "use strict";
 
   var VOTE_URL = "/.netlify/functions/vote";
   var RESULTS_URL = "/.netlify/functions/results";
   var OFFLINE_MSG = "Voting opens on the live site";
+  var VOTE_THRESHOLD = 10;
 
   function votedKey(chart, id) {
     return "bw-voted-" + chart + "-" + id;
@@ -23,9 +26,13 @@
     return "<b>" + n.toLocaleString("en-US") + "</b> vote" + (n === 1 ? "" : "s");
   }
 
+  /* Only render a count once it has real traction; otherwise leave the
+     element empty so no "0 votes" text ever shows. */
   function setCount(chart, id, n) {
     var el = document.querySelector('.vote-count[data-votes="' + chart + "-" + id + '"]');
-    if (el) el.innerHTML = countHtml(n);
+    if (!el) return;
+    n = Number(n) || 0;
+    el.innerHTML = n >= VOTE_THRESHOLD ? countHtml(n) : "";
   }
 
   function offline() {
@@ -94,7 +101,8 @@
         document.querySelectorAll(".vote-count").forEach(function (el) {
           var parts = (el.getAttribute("data-votes") || "").split("-");
           var id = parts[parts.length - 1];
-          el.innerHTML = countHtml(votes[id]);
+          var chart = parts.slice(0, -1).join("-");
+          setCount(chart, id, votes[id]);
         });
       })
       .catch(offline);

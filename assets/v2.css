@@ -455,3 +455,37 @@ a.section-link:hover::after{width:100%}
 .footer-signup .in-rotation__input{padding:10px 16px;font-size:13.5px}
 .footer-signup .in-rotation__button{padding:10px 18px;font-size:12px}
 .footer-signup .in-rotation__status{font-size:13px;text-align:left}
+
+/* ---------- Funnel banners (monetization pass) ---------- */
+.funnel-banner{display:flex;align-items:center;justify-content:space-between;gap:28px;
+  padding:30px 34px;margin:56px 0;border:1px solid rgba(0,230,150,.4);border-radius:16px;
+  background:linear-gradient(135deg,#0e1512 0%,#0a0d0c 100%);position:relative;overflow:hidden;flex-wrap:wrap}
+.funnel-banner::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--grad)}
+.funnel-banner__copy{flex:1 1 280px;min-width:240px}
+.funnel-banner__kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--green);font-weight:700;margin:0 0 10px}
+.funnel-banner__title{font-family:var(--font-d);font-size:clamp(22px,3vw,34px);
+  letter-spacing:.02em;margin:0 0 8px;text-transform:uppercase;line-height:1.15}
+.funnel-banner__sub{color:var(--muted);margin:0;max-width:560px;font-size:15px}
+.funnel-banner .btn{flex-shrink:0}
+
+/* ---------- Sponsor banner (footer-adjacent, discreet) ---------- */
+.sponsor-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:20px 24px;margin:44px 0 0;border:1px dashed rgba(255,255,255,.18);
+  border-radius:12px;background:#0b0c0f;flex-wrap:wrap}
+.sponsor-banner__copy{flex:1 1 280px;min-width:240px}
+.sponsor-banner__kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--dim);font-weight:700;margin:0 0 6px}
+.sponsor-banner__text{color:var(--muted);margin:0;font-size:14px}
+.sponsor-banner__text strong{color:var(--text)}
+.sponsor-banner .btn{flex-shrink:0}
+
+/* ---------- Homepage tertiary path links ---------- */
+.hero-altpaths{margin-top:18px;font-size:13px;color:var(--dim);letter-spacing:.04em}
+.hero-altpaths a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.hero-altpaths a:hover{color:var(--green)}
+
+@media (max-width:640px){
+  .funnel-banner{padding:24px 22px}
+  .funnel-banner .btn,.sponsor-banner .btn{width:100%;text-align:center}
+}

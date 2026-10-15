@@ -10,6 +10,7 @@ Every city has a sound. Beatwick is an international music-discovery platform or
 - Archive (Oct 2025–present): https://beatwick.com/archive.html
 - RSS: https://beatwick.com/feed.xml
 - About: https://beatwick.com/about.html
+- Get Heard — submit your music: free standard queue (a human listens to every submission, in order, no timeline promised) or $10 Priority Spin (guaranteed listen + honest written feedback within 7 days, or your money back; consideration for a spotlight/social/playlist if good enough — placement never guaranteed): https://beatwick.com/submit.html
 
 ## Charts
 

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Heard — Submit Your Music | Beatwick</title>
+<meta name="description" content="Submit your track to Beatwick. Free standard queue — we listen to everything when we can. Or $10 Priority Spin: guaranteed human listen + honest written feedback within 7 days, or your money back. We're selling taste and attention, not reach.">
+<link rel="canonical" href="https://beatwick.com/submit.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beatwick">
+<meta property="og:title" content="Get Heard — Submit Your Music | Beatwick">
+<meta property="og:description" content="Send us one track. A human listens to every submission. Free joins the queue; $10 Priority Spin skips the line with guaranteed listen + honest written feedback within 7 days — or your money back.">
+<meta property="og:url" content="https://beatwick.com/submit.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Get Heard — Submit Your Music | Beatwick">
+<meta name="twitter:description" content="Send us one track. A human listens to every submission. Free joins the queue; $10 Priority Spin skips the line with honest written feedback within 7 days.">
+<link rel="alternate" type="application/rss+xml" title="Beatwick" href="https://beatwick.com/feed.xml">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/v2.css">
+<style>
+  .submit-hero{background:var(--panel);border-bottom:1px solid var(--line)}
+  .submit-hero .wrap{max-width:900px;margin:0 auto;padding:clamp(48px,6vw,84px) 24px}
+  .submit-kicker{font-size:12px;font-weight:800;letter-spacing:.28em;color:var(--green);text-transform:uppercase;margin-bottom:16px}
+  .submit-hero h1{font-family:var(--font-d);font-size:clamp(44px,7vw,88px);line-height:.95;text-transform:uppercase;margin-bottom:20px}
+  .submit-lede{font-size:clamp(17px,2.2vw,21px);color:var(--text);max-width:720px}
+  .submit-lede strong{color:var(--green)}
+  .submit-honest{margin-top:22px;padding:16px 20px;border:1px solid rgba(0,230,150,.35);border-radius:var(--radius);background:rgba(0,230,150,.06);font-size:15.5px;color:var(--text)}
+  .submit-honest strong{color:var(--green)}
+  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;max-width:1000px;margin:40px auto 0;padding:0 24px}
+  .tier{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg);position:relative;display:flex;flex-direction:column}
+  .tier--priority{border-color:rgba(0,230,150,.5);box-shadow:0 0 40px rgba(0,230,150,.08)}
+  .tier__badge{position:absolute;top:-13px;left:24px;background:var(--grad);color:#04110b;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  .tier__name{font-family:var(--font-d);font-size:30px;text-transform:uppercase;margin-bottom:4px}
+  .tier__price{font-size:15px;font-weight:700;color:var(--muted);margin-bottom:14px}
+  .tier__price span{font-size:34px;font-weight:800;color:var(--text)}
+  .tier ul{list-style:none;margin:0 0 22px;flex:1}
+  .tier ul li{padding:8px 0 8px 26px;position:relative;font-size:15px;color:var(--muted)}
+  .tier ul li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+  .tier ul li.neg::before{content:"✕";color:var(--live)}
+  .submit-section{max-width:900px;margin:0 auto;padding:clamp(40px,5vw,64px) 24px}
+  .submit-section h2{font-family:var(--font-d);font-size:clamp(30px,4vw,46px);text-transform:uppercase;margin-bottom:12px}
+  .submit-section h2 .acid{color:var(--acid)}
+  .form-wrap{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,40px);margin-top:24px}
+  .tier-pick{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+  .tier-pick label{cursor:pointer}
+  .tier-pick input{position:absolute;opacity:0;pointer-events:none}
+  .tier-opt{border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:block;transition:border-color .15s,background .15s;height:100%}
+  .tier-pick input:checked + .tier-opt{border-color:var(--green);background:rgba(0,230,150,.06)}
+  .tier-pick input:focus-visible + .tier-opt{outline:2px solid var(--green);outline-offset:2px}
+  .tier-opt__name{font-weight:800;font-size:16px;margin-bottom:4px}
+  .tier-opt__name .price-tag{color:var(--green)}
+  .tier-opt__desc{font-size:13.5px;color:var(--muted)}
+  .field{margin-bottom:20px}
+  .field label{display:block;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .field label .req{color:var(--green)}
+  .field input,.field select,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;color:var(--text);font-family:var(--font-b);font-size:15.5px;padding:13px 16px}
+  .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300e696' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+  .field textarea{min-height:120px;resize:vertical}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green)}
+  .field--invalid input,.field--invalid select,.field--invalid textarea{border-color:var(--live)}
+  .field__error{display:none;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--live)}
+  .field--invalid .field__error{display:block}
+  .field__hint{margin-top:6px;font-size:13px;color:var(--dim)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.form-row,.tier-pick{grid-template-columns:1fr}}
+  .submit-btn{background:var(--grad);color:#04110b;border:none;border-radius:999px;padding:16px 40px;font-weight:800;font-size:14px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;width:100%;margin-top:8px}
+  .submit-btn:hover{transform:translateY(-1px)}
+  .submit-btn:disabled{opacity:.6;cursor:wait;transform:none}
+  .form-status{margin-top:18px;font-size:15px;font-weight:600}
+  .form-status[data-tone="ok"]{color:var(--green)}
+  .form-status[data-tone="error"]{color:var(--live)}
+  .form-status[data-tone="info"]{color:var(--muted)}
+  .paid-banner{display:none;border:1px solid rgba(0,230,150,.5);background:rgba(0,230,150,.08);border-radius:var(--radius);padding:22px;margin-bottom:24px}
+  .paid-banner.show{display:block}
+  .paid-banner h3{font-family:var(--font-d);font-size:24px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+  .paid-banner p{font-size:15px;color:var(--text)}
+  .faq{margin-top:8px}
+  .faq details{border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;background:var(--panel)}
+  .faq summary{cursor:pointer;padding:18px 22px;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--green);font-size:22px;font-weight:400;flex-shrink:0}
+  .faq details[open] summary::after{content:"–"}
+  .faq .faq-a{padding:0 22px 20px;color:var(--muted);font-size:15.5px}
+  .faq .faq-a strong{color:var(--text)}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","name":"Get Heard — Submit Your Music | Beatwick","url":"https://beatwick.com/submit.html","description":"Submit your track to Beatwick. Free standard queue or $10 Priority Spin: guaranteed human listen + honest written feedback within 7 days, or your money back. No placement guaranteed, ever.","publisher":{"@type":"Organization","name":"Beatwick","url":"https://beatwick.com/"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What happens after I submit my music?","acceptedAnswer":{"@type":"Answer","text":"Standard (free) submissions join the review queue and are listened to in order — a real human listens to everything, but we promise no timeline. Priority Spin ($10) jumps the queue: you get a guaranteed listen plus honest written feedback within 7 days, or your money back."}},
+{"@type":"Question","name":"Do you guarantee placement on Beatwick?","acceptedAnswer":{"@type":"Answer","text":"No. Nobody can buy a feature, a playlist add, or a social post. The Priority Spin buys a guaranteed listen and honest written feedback — never a yes. If a track is genuinely good enough, we consider it for a spotlight feature, a social post, or a city playlist. Consideration, not a promise."}},
+{"@type":"Question","name":"What does the $10 Priority Spin actually get me?","acceptedAnswer":{"@type":"Answer","text":"A guaranteed human listen within 7 days and written feedback — even if the answer is no. If we miss the 7-day window, you get your money back. It does not buy reach or exposure numbers: we are upfront that we don't have a big audience yet. You're buying a real listen from people with taste."}},
+{"@type":"Question","name":"How do you confirm my priority payment?","acceptedAnswer":{"@type":"Answer","text":"Keep your Stripe email receipt. During review we match the email on your submission against payments in our Stripe dashboard. A priority submission is not reviewed until its payment is confirmed there."}}
+]}
+]}
+</script>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><span>30 CITIES · ONE FREQUENCY</span><span class="js-date">EVERY CITY HAS A SOUND</span></div></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Beatwick home"><img src="assets/logo.png" alt="Beatwick"></a>
+    <nav class="main-nav">
+      <a href="cities/index.html">Cities</a>
+      <a href="charts/index.html">Charts</a>
+      <a href="map.html">Map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="submit-hero">
+    <div class="wrap">
+      <p class="submit-kicker">Get Heard</p>
+      <h1>Send us <span class="acid">one track.</span></h1>
+      <p class="submit-lede">Here's the deal: submit your music and <strong>a real human listens to every single submission</strong>. Free joins the review queue — we listen when we can. Ten bucks skips the line: guaranteed listen plus <strong>honest written feedback within 7 days</strong>, or your money back.</p>
+      <div class="submit-honest"><strong>We're not selling you an audience we don't have.</strong> No listener counts, no reach promises, no playlist guarantees — we won't pretend otherwise. You're buying a real listen from people with taste. If the track's good enough, we'll <em>consider</em> it for a spotlight, a social post, or a city playlist. Consideration, not a promise.</div>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <p class="tier__name">Standard</p>
+        <p class="tier__price"><span>Free</span> — forever</p>
+        <ul>
+          <li>A real human listens to your track</li>
+          <li>Reviewed in order, when we can get to it</li>
+          <li class="neg">No timeline promised — the queue is the queue</li>
+          <li class="neg">No feedback unless we want to feature you</li>
+        </ul>
+        <a class="btn" href="#submit-form" data-tier-pick="standard">Submit free</a>
+      </div>
+      <div class="tier tier--priority">
+        <span class="tier__badge">Priority Spin</span>
+        <p class="tier__name">Priority Spin</p>
+        <p class="tier__price"><span>$10</span> — one track, one listen</p>
+        <ul>
+          <li>Skip the queue entirely</li>
+          <li>Guaranteed human listen <strong>within 7 days</strong></li>
+          <li>Honest written feedback — even if the answer is no</li>
+          <li>Considered for a spotlight, social post, or city playlist <strong>if it's good enough</strong></li>
+          <li>Miss the 7 days? <strong>Money back.</strong></li>
+        </ul>
+        <a class="btn btn-grad" href="#submit-form" data-tier-pick="priority">Skip the line — $10</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="submit-section" id="submit-form">
+    <h2>Submit <span class="acid">your track</span></h2>
+    <p style="color:var(--muted);max-width:680px">One track per submission. Pick your tier below — you only pay if you choose Priority Spin, and payment happens after you submit, on Stripe's secure checkout.</p>
+
+    <div class="form-wrap">
+      <div class="paid-banner" id="paid-banner" role="status">
+        <h3>Payment received — you're in the priority queue</h3>
+        <p>Thanks — your submission is saved. Keep your Stripe email receipt: we match every priority payment against our Stripe dashboard before review. Expect your listen and written feedback within 7 days.</p>
+      </div>
+
+      <form id="get-heard-form" novalidate>
+        <div class="tier-pick" role="radiogroup" aria-label="Submission tier">
+          <label>
+            <input type="radio" name="tier" value="standard" checked>
+            <span class="tier-opt">
+              <span class="tier-opt__name">Standard <span class="price-tag">— Free</span></span>
+              <span class="tier-opt__desc">We listen to everything. Reviewed in order — no timeline promised.</span>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="tier" value="priority">
+            <span class="tier-opt">
+              <span class="tier-opt__name">Priority Spin <span class="price-tag">— $10</span></span>
+              <span class="tier-opt__desc">Skip the line. Guaranteed listen + written feedback within 7 days, or your money back.</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="f-artist">Artist name <span class="req">*</span></label>
+          <input id="f-artist" name="artist" type="text" maxlength="120" autocomplete="off" placeholder="Your artist or project name">
+          <p class="field__error" data-error-for="f-artist"></p>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-city">Your city <span class="req">*</span></label>
+            <select id="f-city" name="city">
+              <option value="">Select a city…</option>
+              <option value="new-york">New York</option>
+              <option value="los-angeles">Los Angeles</option>
+              <option value="toronto">Toronto</option>
+              <option value="montreal">Montréal</option>
+              <option value="nashville">Nashville</option>
+              <option value="atlanta">Atlanta</option>
+              <option value="new-orleans">New Orleans</option>
+              <option value="sao-paulo">São Paulo</option>
+              <option value="mexico-city">Mexico City</option>
+              <option value="bogota">Bogotá</option>
+              <option value="buenos-aires">Buenos Aires</option>
+              <option value="kingston">Kingston</option>
+              <option value="london">London</option>
+              <option value="berlin">Berlin</option>
+              <option value="paris">Paris</option>
+              <option value="amsterdam">Amsterdam</option>
+              <option value="barcelona">Barcelona</option>
+              <option value="lisbon">Lisbon</option>
+              <option value="stockholm">Stockholm</option>
+              <option value="glasgow">Glasgow</option>
+              <option value="lagos">Lagos</option>
+              <option value="johannesburg">Johannesburg</option>
+              <option value="accra">Accra</option>
+              <option value="cairo">Cairo</option>
+              <option value="tokyo">Tokyo</option>
+              <option value="seoul">Seoul</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="jakarta">Jakarta</option>
+              <option value="manila">Manila</option>
+              <option value="melbourne">Melbourne</option>
+            </select>
+            <p class="field__error" data-error-for="f-city"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" placeholder="you@example.com">
+            <p class="field__error" data-error-for="f-email"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-spotify">Spotify track link <span class="req">*</span></label>
+          <input id="f-spotify" name="spotify_url" type="url" inputmode="url" maxlength="500" autocomplete="off" placeholder="https://open.spotify.com/track/…">
+          <p class="field__error" data-error-for="f-spotify"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-youtube">YouTube link <span class="req">*</span></label>
+          <input id="f-youtube" name="youtube_url" type="url" inputmode="url" maxlength="500" autocomplete="off" placeholder="https://www.youtube.com/watch?v=…">
+          <p class="field__error" data-error-for="f-youtube"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-bio">Short bio <span class="req">*</span></label>
+          <textarea id="f-bio" name="bio" maxlength="1500" placeholder="Who are you, where are you from, what does this track sound like? A few sentences is plenty."></textarea>
+          <p class="field__hint"><span id="bio-count">0</span> / 1500</p>
+          <p class="field__error" data-error-for="f-bio"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-ig">Instagram handle</label>
+          <input id="f-ig" name="ig_handle" type="text" maxlength="40" autocomplete="off" placeholder="@yourhandle (optional)">
+          <p class="field__error" data-error-for="f-ig"></p>
+        </div>
+
+        <button class="submit-btn" type="submit" id="submit-btn">Submit my track</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="submit-section">
+    <h2>Straight <span class="acid">answers</span></h2>
+    <div class="faq">
+      <details open>
+        <summary>What happens after I submit?</summary>
+        <div class="faq-a"><strong>Standard (free):</strong> your track joins the review queue. A real human listens to every submission, in order — but we promise no timeline. The queue is the queue. <strong>Priority Spin ($10):</strong> you skip the line entirely. You get a guaranteed listen plus honest written feedback within 7 days, or your money back.</div>
+      </details>
+      <details>
+        <summary>Do you guarantee placement?</summary>
+        <div class="faq-a"><strong>No. Nobody can buy a feature, a playlist add, or a social post.</strong> The Priority Spin buys a guaranteed listen and honest feedback — never a yes. If a track is genuinely good enough, we'll <em>consider</em> it for a spotlight feature, a social post, or a city playlist. Consideration, not a promise.</div>
+      </details>
+      <details>
+        <summary>What does the $10 actually get me?</summary>
+        <div class="faq-a">A guaranteed human listen within 7 days and written feedback — even if the answer is no. It does <strong>not</strong> buy reach, exposure, or listener numbers. We're upfront: we don't have a big audience yet, and we won't sell you one. You're buying a real listen from people with taste.</div>
+      </details>
+      <details>
+        <summary>How do you confirm my priority payment?</summary>
+        <div class="faq-a">Keep your Stripe email receipt. During review we match the email on your submission against payments in our Stripe dashboard — a priority submission isn't reviewed until its payment is confirmed there.</div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Beatwick">
+      <p>Every city has a sound. Beatwick maps the music of 30 cities — the scenes, the venues, the tracks actually moving — with playlists that refresh and writing with teeth.</p>
+      <p style="margin-top:12px"><a href="https://www.instagram.com/thebeatwick">Instagram</a> · <a href="https://www.facebook.com/thebeatwick">Facebook</a></p>
+
+      <form class="in-rotation__form footer-signup" novalidate>
+        <p class="footer-signup__title">In rotation — the weekly email</p>
+        <div class="in-rotation__row">
+          <input class="in-rotation__input" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
+          <button class="in-rotation__button" type="submit">Join</button>
+        </div>
+        <p class="in-rotation__status" data-signup-status role="status" aria-live="polite" hidden></p>
+      </form>
+      <script src="/assets/signup.js"></script>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="cities/index.html">All 30 cities</a>
+      <a href="charts/index.html">The Founder's Global 30</a>
+      <a href="map.html">World map</a>
+      <a href="artists/index.html">Artists</a>
+      <a href="archive.html">Dispatches</a>
+      <a href="about.html">About</a>
+      <a href="submit.html">Get Heard — submit your music</a>
+      <a href="feed.xml">RSS feed</a>
+    </div>
+    <div class="footer-col">
+      <h4>All 30 cities</h4>
+        <p class="footer-region">North America</p>
+        <div class="footer-cities">
+          <a href="cities/new-york.html">New York</a><a href="cities/los-angeles.html">Los Angeles</a><a href="cities/toronto.html">Toronto</a><a href="cities/montreal.html">Montréal</a><a href="cities/nashville.html">Nashville</a><a href="cities/atlanta.html">Atlanta</a><a href="cities/new-orleans.html">New Orleans</a>
+        </div>
+        <p class="footer-region">Latin America & Caribbean</p>
+        <div class="footer-cities">
+          <a href="cities/sao-paulo.html">São Paulo</a><a href="cities/mexico-city.html">Mexico City</a><a href="cities/bogota.html">Bogotá</a><a href="cities/buenos-aires.html">Buenos Aires</a><a href="cities/kingston.html">Kingston</a>
+        </div>
+        <p class="footer-region">Europe</p>
+        <div class="footer-cities">
+          <a href="cities/london.html">London</a><a href="cities/berlin.html">Berlin</a><a href="cities/paris.html">Paris</a><a href="cities/amsterdam.html">Amsterdam</a><a href="cities/barcelona.html">Barcelona</a><a href="cities/lisbon.html">Lisbon</a><a href="cities/stockholm.html">Stockholm</a><a href="cities/glasgow.html">Glasgow</a>
+        </div>
+        <p class="footer-region">Africa & Middle East</p>
+        <div class="footer-cities">
+          <a href="cities/lagos.html">Lagos</a><a href="cities/johannesburg.html">Johannesburg</a><a href="cities/accra.html">Accra</a><a href="cities/cairo.html">Cairo</a>
+        </div>
+        <p class="footer-region">Asia-Pacific</p>
+        <div class="footer-cities">
+          <a href="cities/tokyo.html">Tokyo</a><a href="cities/seoul.html">Seoul</a><a href="cities/mumbai.html">Mumbai</a><a href="cities/jakarta.html">Jakarta</a><a href="cities/manila.html">Manila</a><a href="cities/melbourne.html">Melbourne</a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-disclaimer">Beatwick is an independent music-discovery publication. Artist names, song titles and venue names belong to their respective owners. <a href="assets/credits.md">Photo credits</a>.</div>
+  <div class="footer-bottom"><span>© 2026 Beatwick. Every city has a sound.</span><span>30 cities · one frequency</span></div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   STRIPE SETUP — 2-minute step, do this once Stripe is connected:
+   1. Stripe dashboard → Products → New product → name it
+      "Beatwick Priority Spin", $10 USD, one-time payment.
+   2. Create a Payment Link for that product. In the payment link's
+      settings, set the success behavior to redirect to:
+        https://beatwick.netlify.app/submit.html?paid=1
+   3. Paste the real buy.stripe.com URL below, replacing the
+      REPLACE_WITH_REAL_LINK placeholder.
+   Until then, Priority submissions are stored with status
+   "payment-pending" and nobody is charged — the form handles the
+   placeholder honestly (see below).
+------------------------------------------------------------------ */
+const STRIPE_PRIORITY_LINK = "https://buy.stripe.com/REPLACE_WITH_REAL_LINK";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const IG_RE = /^@?[A-Za-z0-9._]{1,30}$/;
+
+function looksLikeSpotifyTrack(url) {
+  try {
+    const u = new URL(url);
+    return u.hostname.toLowerCase() === "open.spotify.com" && u.pathname.includes("/track/");
+  } catch { return false; }
+}
+function looksLikeYouTube(url) {
+  try {
+    const u = new URL(url);
+    const host = u.hostname.toLowerCase();
+    const hosts = ["www.youtube.com","youtube.com","m.youtube.com","music.youtube.com","youtu.be"];
+    if (!hosts.includes(host)) return false;
+    if (host === "youtu.be") return u.pathname.length > 1;
+    return u.pathname === "/watch" || u.pathname.startsWith("/shorts/")
+        || u.pathname.startsWith("/embed/") || u.pathname.startsWith("/live/");
+  } catch { return false; }
+}
+
+const form = document.getElementById("get-heard-form");
+const statusEl = document.getElementById("form-status");
+const submitBtn = document.getElementById("submit-btn");
+
+function setFieldError(id, message) {
+  const field = document.getElementById(id).closest(".field");
+  field.classList.add("field--invalid");
+  field.querySelector('[data-error-for="' + id + '"]').textContent = message;
+}
+function clearFieldError(id) {
+  const field = document.getElementById(id).closest(".field");
+  field.classList.remove("field--invalid");
+  field.querySelector('[data-error-for="' + id + '"]').textContent = "";
+}
+function setStatus(message, tone) {
+  statusEl.textContent = message;
+  statusEl.dataset.tone = tone;
+}
+
+function validate() {
+  let ok = true;
+  const v = (id) => document.getElementById(id).value.trim();
+
+  if (!v("f-artist")) { setFieldError("f-artist", "Tell us your artist name — we need to know whose track this is."); ok = false; }
+  else clearFieldError("f-artist");
+
+  if (!v("f-city")) { setFieldError("f-city", "Pick the city you're repping. That's the whole point of Beatwick."); ok = false; }
+  else clearFieldError("f-city");
+
+  const email = v("f-email");
+  if (!email || !EMAIL_RE.test(email)) { setFieldError("f-email", "That email doesn't look right — double-check it, since this is how we reach you."); ok = false; }
+  else clearFieldError("f-email");
+
+  const spotify = v("f-spotify");
+  if (!looksLikeSpotifyTrack(spotify)) { setFieldError("f-spotify", "That doesn't look like a Spotify track link — it should start with https://open.spotify.com/track/"); ok = false; }
+  else clearFieldError("f-spotify");
+
+  const youtube = v("f-youtube");
+  if (!looksLikeYouTube(youtube)) { setFieldError("f-youtube", "That doesn't look like a YouTube link — paste the full watch or share URL."); ok = false; }
+  else clearFieldError("f-youtube");
+
+  const bio = v("f-bio");
+  if (bio.length < 10) { setFieldError("f-bio", "Give us a little more than that — a sentence or two about who you are and what this sounds like."); ok = false; }
+  else if (bio.length > 1500) { setFieldError("f-bio", "Keep it under 1500 characters — short and sharp."); ok = false; }
+  else clearFieldError("f-bio");
+
+  const ig = v("f-ig");
+  if (ig && !IG_RE.test(ig)) { setFieldError("f-ig", "That doesn't look like an Instagram handle — letters, numbers, dots and underscores only."); ok = false; }
+  else clearFieldError("f-ig");
+
+  return ok;
+}
+
+["f-artist","f-city","f-email","f-spotify","f-youtube","f-bio","f-ig"].forEach((id) => {
+  const el = document.getElementById(id);
+  el.addEventListener("input", () => clearFieldError(id));
+  el.addEventListener("change", () => clearFieldError(id));
+});
+document.getElementById("f-bio").addEventListener("input", (e) => {
+  document.getElementById("bio-count").textContent = e.target.value.length;
+});
+
+// Tier shortcut buttons scroll to the form and pre-select the tier.
+document.querySelectorAll("[data-tier-pick]").forEach((a) => {
+  a.addEventListener("click", () => {
+    const radio = form.querySelector('input[name="tier"][value="' + a.dataset.tierPick + '"]');
+    if (radio) radio.checked = true;
+  });
+});
+
+// ?paid=1 — the artist is back from Stripe checkout.
+if (new URLSearchParams(location.search).get("paid") === "1") {
+  document.getElementById("paid-banner").classList.add("show");
+}
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!validate()) {
+    setStatus("A couple of fields need attention — they're marked in red above.", "error");
+    return;
+  }
+
+  const fd = new FormData(form);
+  const payload = {
+    artist: fd.get("artist").trim(),
+    city: fd.get("city"),
+    spotify_url: fd.get("spotify_url").trim(),
+    youtube_url: fd.get("youtube_url").trim(),
+    bio: fd.get("bio").trim(),
+    email: fd.get("email").trim(),
+    ig_handle: fd.get("ig_handle").trim(),
+    tier: fd.get("tier"),
+  };
+
+  submitBtn.disabled = true;
+  setStatus("Sending your track…", "info");
+
+  try {
+    const res = await fetch("/.netlify/functions/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+
+    if (!data.ok) {
+      const messages = {
+        "invalid-artist": "Artist name is missing or too long.",
+        "invalid-city": "Pick a city from the dropdown.",
+        "invalid-spotify-url": "That Spotify link doesn't look like a track link.",
+        "invalid-youtube-url": "That YouTube link doesn't look right.",
+        "invalid-bio": "Your bio needs to be between a sentence and 1500 characters.",
+        "invalid-email": "That email doesn't look right.",
+        "invalid-ig-handle": "That Instagram handle doesn't look right.",
+        "invalid-tier": "Pick a tier — standard or priority.",
+        "rate-limited": "Slow down — too many submissions from this connection today.",
+      };
+      setStatus(messages[data.error] || "Something went wrong on our end. Try again in a minute.", "error");
+      submitBtn.disabled = false;
+      return;
+    }
+
+    if (payload.tier === "priority") {
+      if (STRIPE_PRIORITY_LINK.includes("REPLACE_WITH_REAL_LINK")) {
+        // Honest fallback: checkout isn't wired yet, submission is safely stored.
+        setStatus("Your submission is saved and queued as priority-pending — our $10 checkout isn't live yet, so we haven't charged you anything. We'll email you a payment link as soon as it's ready.", "info");
+        submitBtn.disabled = false;
+        return;
+      }
+      const url = STRIPE_PRIORITY_LINK
+        + "?client_reference_id=" + encodeURIComponent(data.id)
+        + "&prefilled_email=" + encodeURIComponent(payload.email);
+      window.location.href = url;
+      return;
+    }
+
+    form.reset();
+    setStatus("You're in the queue. A real human will listen — we get to every submission in order, no timeline promised.", "ok");
+    submitBtn.disabled = false;
+  } catch (err) {
+    setStatus("Couldn't reach our server — check your connection and try again.", "error");
+    submitBtn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
