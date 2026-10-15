@@ -1,2 +1,4 @@
 [build]
   publish = "."
+  command = "npm install --prefix netlify/functions"
+  functions = "netlify/functions"
